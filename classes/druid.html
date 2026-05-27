@@ -1,0 +1,100 @@
+<!DOCTYPE html>
+<html lang="pt">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Druid Quick Reference Card (5.5E)</title>
+    <link rel="stylesheet" href="../style.css">
+    <style>
+        :root { --bg-color: #f5fcf5; --text-color: #2c2c2c; --accent-color: #4caf50; --accent-dark: #2e7d32; --border-color: #d0e8d0; --card-bg: #ffffff; }
+        .container::before { background-image: url('../img/druida.jpg'); }
+    </style>
+</head>
+<body class="lang-pt">
+    <div class="container">
+        <div class="top-bar">
+            <a href="../index.html" class="back-btn"><span lang="pt">&larr; Menu de Classes</span><span lang="en">&larr; Class Menu</span><span lang="es">&larr; Menú de Clases</span></a>
+            <div class="lang-selector">
+                <button class="lang-btn active" onclick="setLanguage('pt', this)">PT</button><button class="lang-btn" onclick="setLanguage('en', this)">EN</button><button class="lang-btn" onclick="setLanguage('es', this)">ES</button>
+            </div>
+        </div>
+        <header>
+            <h1>Druid</h1>
+            <h2><span lang="pt">Cartão de Referência (5.5E)</span><span lang="en">Quick Reference Card (5.5E)</span><span lang="es">Tarjeta de Referencia (5.5E)</span></h2>
+        </header>
+        <div class="grid">
+            <div>
+                <section>
+                    <h3><img src="https://api.iconify.design/game-icons/scroll-unfurled.svg" alt="icon"><span lang="pt">Visão Geral</span><span lang="en">Class Overview</span><span lang="es">Descripción General</span></h3>
+                    <table class="overview-table">
+                        <tr><td><span lang="pt">Dado de Vida</span><span lang="en">Hit Die</span><span lang="es">Dado de Golpe</span></td><td>d8</td></tr>
+                        <tr><td><span lang="pt">Atributo</span><span lang="en">Primary</span><span lang="es">Atributo</span></td><td><span lang="pt">Sabedoria</span><span lang="en">Wisdom</span><span lang="es">Sabiduría</span></td></tr>
+                        <tr><td><span lang="pt">Armaduras</span><span lang="en">Armor</span><span lang="es">Armaduras</span></td><td><span lang="pt">Leves, Médias, Escudos (Sem restrição a metal!)</span><span lang="en">Light, Medium, Shields (No metal restriction!)</span><span lang="es">Ligeras, Medias, Escudos (¡Sin restricción de metal!)</span></td></tr>
+                        <tr><td><span lang="pt">Armas</span><span lang="en">Weapons</span><span lang="es">Armas</span></td><td><span lang="pt">Armas Simples</span><span lang="en">Simple Weapons</span><span lang="es">Armas Simples</span></td></tr>
+                        <tr><td><span lang="pt">Testes (Saves)</span><span lang="en">Saves</span><span lang="es">Salvaciones</span></td><td><span lang="pt">Inteligência, Sabedoria</span><span lang="en">Intelligence, Wisdom</span><span lang="es">Inteligencia, Sabiduría</span></td></tr>
+                    </table>
+                </section>
+                <section>
+                    <h3><img src="https://api.iconify.design/game-icons/shield.svg" alt="icon"><span lang="pt">Papel no Grupo</span><span lang="en">Role in the Party</span><span lang="es">Rol en el Grupo</span></h3>
+                    <ul>
+                        <li><strong><span lang="pt">Controlador de Campo:</span><span lang="en">Battlefield Controller:</span><span lang="es">Controlador de Campo:</span></strong>
+                            <span lang="pt"> Cria terrenos difíceis e invoca criaturas para dominar a área.</span><span lang="en"> Creates difficult terrain and summons creatures to dominate the area.</span><span lang="es"> Crea terrenos difíciles e invoca criaturas para dominar el área.</span></li>
+                        <li><strong><span lang="pt">Batedor / Tanque:</span><span lang="en">Scout / Tank:</span><span lang="es">Explorador / Tanque:</span></strong>
+                            <span lang="pt"> A Forma Selvagem permite explorar furtivamente ou lutar na linha de frente.</span><span lang="en"> Wild Shape allows for stealthy scouting or frontline brawling.</span><span lang="es"> La Forma Salvaje permite explorar con sigilo o luchar en primera línea.</span></li>
+                    </ul>
+                </section>
+                <section>
+                    <h3><img src="https://api.iconify.design/game-icons/crossed-swords.svg" alt="icon"><span lang="pt">Guia de Armas</span><span lang="en">Weapons Guide</span><span lang="es">Guía de Armas</span></h3>
+                    <ul>
+                        <li><strong><span lang="pt">Bordão e Clava:</span><span lang="en">Quarterstaff & Club:</span><span lang="es">Bastón y Porra:</span></strong>
+                            <span lang="pt"> Perfeitos em sinergia com o truque Bordão Mágico (ataca com Sabedoria).</span><span lang="en"> Perfect synergy with the Shillelagh cantrip (attacks with Wisdom).</span><span lang="es"> Sinergia perfecta con el truco Garrote Mágico (ataca con Sabiduría).</span></li>
+                        <li><strong><span lang="pt">Cimitarra / Foice:</span><span lang="en">Scimitar / Sickle:</span><span lang="es">Cimitarra / Hoz:</span></strong>
+                            <span lang="pt"> Armas ágeis para druidas focados em Destreza.</span><span lang="en"> Nimble weapons for Dexterity-focused druids.</span><span lang="es"> Armas ágiles para druidas enfocados en Destreza.</span></li>
+                        <li><strong><span lang="pt">Escudo de Madeira:</span><span lang="en">Wooden Shield:</span><span lang="es">Escudo de Madera:</span></strong>
+                            <span lang="pt"> Mantém você seguro enquanto concentra em magias importantes.</span><span lang="en"> Keeps you safe while concentrating on important spells.</span><span lang="es"> Te mantiene seguro mientras te concentras en conjuros importantes.</span></li>
+                    </ul>
+                </section>
+            </div>
+            <div>
+                <section>
+                    <h3><img src="https://api.iconify.design/game-icons/oak-leaf.svg" alt="icon"><span lang="pt">Características Base</span><span lang="en">Key Features</span><span lang="es">Características Clave</span></h3>
+                    <ul class="features-list">
+                        <li class="feature-item">
+                            <div class="feature-title"><span lang="pt">Forma Selvagem (Nv 1)</span><span lang="en">Wild Shape (Lvl 1)</span><span lang="es">Forma Salvaje (Nv 1)</span></div>
+                            <div><span lang="pt">Agora sempre uma Ação Bônus. Transforme-se em animais usando perfis padrão.</span><span lang="en">Now always a Bonus Action. Transform into beasts using standardized templates.</span><span lang="es">Ahora siempre una Acción Adicional. Transfórmate en bestias usando perfiles estándar.</span></div>
+                        </li>
+                        <li class="feature-item">
+                            <div class="feature-title"><span lang="pt">Ordem Primal (Nv 1)</span><span lang="en">Primal Order (Lvl 1)</span><span lang="es">Orden Primordial (Nv 1)</span></div>
+                            <div><span lang="pt">Escolha: Mago (+1 Truque, Arcana/Natureza) ou Guardião (Armaduras Médias e Armas Marciais).</span><span lang="en">Choose: Magician (+1 Cantrip, Arcana/Nature) or Warden (Medium Armor and Martial Weapons).</span><span lang="es">Elige: Mago (+1 Truco, Arcano/Naturaleza) o Guardián (Armadura Media y Armas Marciales).</span></div>
+                        </li>
+                        <li class="feature-item">
+                            <div class="feature-title"><span lang="pt">Conjuração (Nv 1)</span><span lang="en">Spellcasting (Lvl 1)</span><span lang="es">Lanzamiento de Conjuros (Nv 1)</span></div>
+                            <div><span lang="pt">Magia baseada em Sabedoria. Você prepara suas magias após um Descanso Longo.</span><span lang="en">Wisdom-based magic. You prepare your spells after a Long Rest.</span><span lang="es">Magia basada en Sabiduría. Preparas tus conjuros tras un Descanso Largo.</span></div>
+                        </li>
+                    <li class="feature-item">
+                        <div class="feature-title"><span lang="pt">Ressurgência Selvagem (Nv 5)</span><span lang="en">Wild Resurgence (Lvl 5)</span><span lang="es">Resurgimiento Salvaje (Nv 5)</span></div>
+                        <div><span lang="pt">Novo! Gaste 1 espaço de magia para recuperar Forma Selvagem (ou vice-versa 1/dia).</span><span lang="en">New! Expend 1 spell slot to recover a Wild Shape use (or vice versa 1/day).</span><span lang="es">¡Nuevo! Gasta 1 espacio de conjuro para recuperar Forma Salvaje (o viceversa 1/día).</span></div>
+                    </li>
+                    <li class="feature-item">
+                        <div class="feature-title"><span lang="pt">Magias Bestiais (Nv 18)</span><span lang="en">Beast Spells (Lvl 18)</span><span lang="es">Conjuros Bestiales (Nv 18)</span></div>
+                        <div><span lang="pt">Você pode conjurar magias normalmente enquanto estiver transformado em Forma Selvagem.</span><span lang="en">You can cast spells normally while transformed in Wild Shape.</span><span lang="es">Puedes lanzar conjuros normalmente mientras estés transformado en Forma Salvaje.</span></div>
+                    </li>
+                    <li class="feature-item">
+                        <div class="feature-title"><span lang="pt">Arquidruida (Nv 20)</span><span lang="en">Archdruid (Lvl 20)</span><span lang="es">Archidruida (Nv 20)</span></div>
+                        <div><span lang="pt">Recupera Formas Selvagens rolando Iniciativa; Ganha "Santuário da Natureza" trocando formas por vitalidade.</span><span lang="en">Regain Wild Shapes rolling Initiative; Gains "Nature's Sanctuary" converting forms to vitality.</span><span lang="es">Recupera Formas Salvajes tirando Iniciativa; Gana "Santuario de la Naturaleza" convirtiendo formas en vitalidad.</span></div>
+                    </li>
+                    </ul>
+                </section>
+            </div>
+        </div>
+    </div>
+    <script>
+        function setLanguage(lang, element) {
+            document.body.className = 'lang-' + lang;
+            const buttons = document.querySelectorAll('.lang-btn');
+            buttons.forEach(btn => btn.classList.remove('active'));
+            element.classList.add('active');
+        }
+    </script>
+</body>
+</html>

@@ -1,0 +1,100 @@
+<!DOCTYPE html>
+<html lang="pt">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Ranger Quick Reference Card (5.5E)</title>
+    <link rel="stylesheet" href="../style.css">
+    <style>
+        :root { --bg-color: #f6f7f5; --text-color: #2c2c2c; --accent-color: #8bc34a; --accent-dark: #558b2f; --border-color: #dce8d0; --card-bg: #ffffff; }
+        .container::before { background-image: url('../img/guardiao.jpg'); }
+    </style>
+</head>
+<body class="lang-pt">
+    <div class="container">
+        <div class="top-bar">
+            <a href="../index.html" class="back-btn"><span lang="pt">&larr; Menu de Classes</span><span lang="en">&larr; Class Menu</span><span lang="es">&larr; Menú de Clases</span></a>
+            <div class="lang-selector">
+                <button class="lang-btn active" onclick="setLanguage('pt', this)">PT</button><button class="lang-btn" onclick="setLanguage('en', this)">EN</button><button class="lang-btn" onclick="setLanguage('es', this)">ES</button>
+            </div>
+        </div>
+        <header>
+            <h1>Ranger</h1>
+            <h2><span lang="pt">Cartão de Referência (5.5E)</span><span lang="en">Quick Reference Card (5.5E)</span><span lang="es">Tarjeta de Referencia (5.5E)</span></h2>
+        </header>
+        <div class="grid">
+            <div>
+                <section>
+                    <h3><img src="https://api.iconify.design/game-icons/scroll-unfurled.svg" alt="icon"><span lang="pt">Visão Geral</span><span lang="en">Class Overview</span><span lang="es">Descripción General</span></h3>
+                    <table class="overview-table">
+                        <tr><td><span lang="pt">Dado de Vida</span><span lang="en">Hit Die</span><span lang="es">Dado de Golpe</span></td><td>d10</td></tr>
+                        <tr><td><span lang="pt">Atributo</span><span lang="en">Primary</span><span lang="es">Atributo</span></td><td><span lang="pt">Destreza, Sabedoria</span><span lang="en">Dexterity, Wisdom</span><span lang="es">Destreza, Sabiduría</span></td></tr>
+                        <tr><td><span lang="pt">Armaduras</span><span lang="en">Armor</span><span lang="es">Armaduras</span></td><td><span lang="pt">Leves, Médias, Escudos</span><span lang="en">Light, Medium, Shields</span><span lang="es">Ligeras, Medias, Escudos</span></td></tr>
+                        <tr><td><span lang="pt">Armas</span><span lang="en">Weapons</span><span lang="es">Armas</span></td><td><span lang="pt">Simples e Marciais</span><span lang="en">Simple and Martial</span><span lang="es">Simples y Marciales</span></td></tr>
+                        <tr><td><span lang="pt">Testes (Saves)</span><span lang="en">Saves</span><span lang="es">Salvaciones</span></td><td><span lang="pt">Força, Destreza</span><span lang="en">Strength, Dexterity</span><span lang="es">Fuerza, Destreza</span></td></tr>
+                    </table>
+                </section>
+                <section>
+                    <h3><img src="https://api.iconify.design/game-icons/shield.svg" alt="icon"><span lang="pt">Papel no Grupo</span><span lang="en">Role in the Party</span><span lang="es">Rol en el Grupo</span></h3>
+                    <ul>
+                        <li><strong><span lang="pt">Atirador Especialista:</span><span lang="en">Expert Marksman:</span><span lang="es">Tirador Experto:</span></strong>
+                            <span lang="pt"> Dano consistente de longe com arcos e a Marca do Caçador.</span><span lang="en"> Consistent long-range damage with bows and Hunter's Mark.</span><span lang="es"> Daño consistente a distancia con arcos y la Marca del Cazador.</span></li>
+                        <li><strong><span lang="pt">Batedor / Guia:</span><span lang="en">Scout / Guide:</span><span lang="es">Explorador / Guía:</span></strong>
+                            <span lang="pt"> Perícias de sobrevivência e furtividade para navegar qualquer terreno.</span><span lang="en"> Survival and stealth skills to navigate any terrain.</span><span lang="es"> Habilidades de supervivencia y sigilo para navegar cualquier terreno.</span></li>
+                    </ul>
+                </section>
+                <section>
+                    <h3><img src="https://api.iconify.design/game-icons/crossed-swords.svg" alt="icon"><span lang="pt">Guia de Armas</span><span lang="en">Weapons Guide</span><span lang="es">Guía de Armas</span></h3>
+                    <ul>
+                        <li><strong><span lang="pt">Arco Longo:</span><span lang="en">Longbow:</span><span lang="es">Arco Largo:</span></strong>
+                            <span lang="pt"> A arma preferida para patrulheiros focados no Estilo de Arquearia.</span><span lang="en"> The weapon of choice for Archery Style-focused rangers.</span><span lang="es"> El arma preferida para exploradores enfocados en Estilo de Tiro con Arco.</span></li>
+                        <li><strong><span lang="pt">Duas Espadas Curtas:</span><span lang="en">Two Shortswords:</span><span lang="es">Dos Espadas Cortas:</span></strong>
+                            <span lang="pt"> Excelente sinergia se você focar em Combate com Duas Armas.</span><span lang="en"> Excellent synergy if you focus on Two-Weapon Fighting.</span><span lang="es"> Excelente sinergia si te enfocas en Lucha con Dos Armas.</span></li>
+                        <li><strong><span lang="pt">Rapieira e Escudo:</span><span lang="en">Rapier & Shield:</span><span lang="es">Estoque y Escudo:</span></strong>
+                            <span lang="pt"> Opção sólida para patrulheiros de Destreza na linha de frente.</span><span lang="en"> Solid frontline option for Dexterity-based rangers.</span><span lang="es"> Opción sólida para exploradores de Destreza en primera línea.</span></li>
+                    </ul>
+                </section>
+            </div>
+            <div>
+                <section>
+                    <h3><img src="https://api.iconify.design/game-icons/bow-arrow.svg" alt="icon"><span lang="pt">Características Base</span><span lang="en">Key Features</span><span lang="es">Características Clave</span></h3>
+                    <ul class="features-list">
+                        <li class="feature-item">
+                            <div class="feature-title"><span lang="pt">Marca do Caçador (Nv 1)</span><span lang="en">Hunter's Mark (Lvl 1)</span><span lang="es">Marca del Cazador (Nv 1)</span></div>
+                            <div><span lang="pt">Magia garantida e você pode conjurá-la algumas vezes de graça sem gastar espaços de magia!</span><span lang="en">Guaranteed spell, and you can cast it a few times for free without spell slots!</span><span lang="es">¡Conjuro garantizado y puedes lanzarlo un par de veces gratis sin espacios de conjuro!</span></div>
+                        </li>
+                        <li class="feature-item">
+                            <div class="feature-title"><span lang="pt">Explorador Hábil (Nv 1)</span><span lang="en">Deft Explorer (Lvl 1)</span><span lang="es">Explorador Hábil (Nv 1)</span></div>
+                            <div><span lang="pt">Ganha Especialização (dobro de bônus) em uma perícia sua. E aprende dois idiomas extras.</span><span lang="en">Gain Expertise (double bonus) in one of your skills. Plus two extra languages.</span><span lang="es">Gana Pericia (doble bono) en una de tus habilidades. Y aprende dos idiomas extra.</span></div>
+                        </li>
+                        <li class="feature-item">
+                            <div class="feature-title"><span lang="pt">Maestria de Armas (Nv 1)</span><span lang="en">Weapon Mastery (Lvl 1)</span><span lang="es">Maestría de Armas (Nv 1)</span></div>
+                            <div><span lang="pt">Desbloqueia os golpes de efeito de 2 tipos de armas (Derrubar, Fendar, etc).</span><span lang="en">Unlocks weapon properties for 2 types of weapons (Topple, Cleave, etc).</span><span lang="es">Desbloquea las propiedades para 2 tipos de armas (Derribar, Hender, etc).</span></div>
+                        </li>
+                    <li class="feature-item">
+                        <div class="feature-title"><span lang="pt">Ataque Extra e Deslocamento (Nv 5-6)</span><span lang="en">Extra Attack & Roving (Lvls 5-6)</span><span lang="es">Ataque Extra y Movilidad (Nv 5-6)</span></div>
+                        <div><span lang="pt">Ataque duas vezes (Nv 5). Ganha +3m de velocidade, escalar e nadar (Nv 6).</span><span lang="en">Attack twice (Lvl 5). Gain +10ft speed, climb, and swim speeds (Lvl 6).</span><span lang="es">Ataca dos veces (Nv 5). Gana +3m de velocidad, escalar y nadar (Nv 6).</span></div>
+                    </li>
+                    <li class="feature-item">
+                        <div class="feature-title"><span lang="pt">Véu da Natureza (Nv 10)</span><span lang="en">Nature's Veil (Lvl 10)</span><span lang="es">Velo de la Naturaleza (Nv 10)</span></div>
+                        <div><span lang="pt">Gaste um espaço de magia como Ação Bônus para ficar Invisível até o final do seu próximo turno.</span><span lang="en">Expend a spell slot as a Bonus Action to become Invisible until the end of your next turn.</span><span lang="es">Gasta un espacio de conjuro como Acción Adicional para volverte Invisible hasta el final de tu próximo turno.</span></div>
+                    </li>
+                    <li class="feature-item">
+                        <div class="feature-title"><span lang="pt">Matador de Inimigos (Nv 20)</span><span lang="en">Foe Slayer (Lvl 20)</span><span lang="es">Asesino de Enemigos (Nv 20)</span></div>
+                        <div><span lang="pt">O dado de dano bônus da sua Marca do Caçador aumenta para 1d10 contra o alvo.</span><span lang="en">The bonus damage die of your Hunter's Mark increases to 1d10 against the target.</span><span lang="es">El dado de daño adicional de tu Marca del Cazador aumenta a 1d10 contra el objetivo.</span></div>
+                    </li>
+                    </ul>
+                </section>
+            </div>
+        </div>
+    </div>
+    <script>
+        function setLanguage(lang, element) {
+            document.body.className = 'lang-' + lang;
+            const buttons = document.querySelectorAll('.lang-btn');
+            buttons.forEach(btn => btn.classList.remove('active'));
+            element.classList.add('active');
+        }
+    </script>
+</body>
+</html>

@@ -1,0 +1,310 @@
+
+<!DOCTYPE html>
+<html lang="pt">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Monk Quick Reference Card (5E)</title>
+    <link rel="stylesheet" href="../style.css">
+    <style>
+        :root {
+            --bg-color: #faf8f5;
+            --text-color: #2c2c2c;
+            --accent-color: #bfa15f;
+            --accent-dark: #8c6d39;
+            --border-color: #e0dacb;
+            --card-bg: #ffffff;
+        }
+        .container::before {
+            background-image: url('../img/monge.jpg');
+        }
+    </style>
+</head>
+<body class="lang-pt">
+
+    <div class="container">
+        <!-- Barra Superior (Voltar e Idiomas) -->
+        <div class="top-bar">
+            <a href="../index.html" class="back-btn">
+                <span lang="pt">&larr; Menu de Classes</span>
+                <span lang="en">&larr; Class Menu</span>
+                <span lang="es">&larr; Menú de Clases</span>
+            </a>
+            
+            <div class="lang-selector">
+                <button class="lang-btn active" onclick="setLanguage('pt', this)">PT</button>
+                <button class="lang-btn" onclick="setLanguage('en', this)">EN</button>
+                <button class="lang-btn" onclick="setLanguage('es', this)">ES</button>
+            </div>
+        </div>
+
+        <!-- Cabeçalho -->
+        <header>
+            <h1>Monk</h1>
+            <h2>
+                <span lang="pt">Cartão de Referência Rápida (5.5E)</span>
+                <span lang="en">Quick Reference Card (5.5E)</span>
+                <span lang="es">Tarjeta de Referencia Rápida (5.5E)</span>
+            </h2>
+        </header>
+
+        <div class="grid">
+            <!-- Coluna Esquerda -->
+            <div>
+                <!-- Visão Geral da Classe -->
+                <section>
+                    <h3>
+                        <img src="https://api.iconify.design/game-icons/scroll-unfurled.svg" alt="icon">
+                        <span lang="pt">Visão Geral da Classe</span>
+                        <span lang="en">Class Overview</span>
+                        <span lang="es">Descripción General</span>
+                    </h3>
+                    <table class="overview-table">
+                        <tr>
+                            <td><span lang="pt">Dado de Vida</span><span lang="en">Hit Die</span><span lang="es">Dado de Golpe</span></td>
+                            <td>d8</td>
+                        </tr>
+                        <tr>
+                            <td><span lang="pt">Atributo Principal</span><span lang="en">Primary Ability</span><span lang="es">Atributo Principal</span></td>
+                            <td><span lang="pt">Destreza e Sabedoria</span><span lang="en">Dexterity & Wisdom</span><span lang="es">Destreza y Sabiduría</span></td>
+                        </tr>
+                        <tr>
+                            <td><span lang="pt">Proficiência em Armaduras</span><span lang="en">Armor Proficiencies</span><span lang="es">Proficiencia en Armaduras</span></td>
+                            <td><span lang="pt">Nenhuma</span><span lang="en">None</span><span lang="es">Ninguna</span></td>
+                        </tr>
+                        <tr>
+                            <td><span lang="pt">Proficiência em Armas</span><span lang="en">Weapon Proficiencies</span><span lang="es">Proficiencia en Armas</span></td>
+                            <td><span lang="pt">Armas simples, armas marciais Leves</span><span lang="en">Simple weapons, martial Light weapons</span><span lang="es">Armas simples, armas marciales Ligeras</span></td>
+                        </tr>
+                        <tr>
+                            <td><span lang="pt">Ferramentas</span><span lang="en">Tool Proficiencies</span><span lang="es">Herramientas</span></td>
+                            <td>
+                                <span lang="pt">Um tipo de ferramenta de artesão ou instrumento musical</span>
+                                <span lang="en">One type of artisan's tools or musical instrument</span>
+                                <span lang="es">Un tipo de herramienta de artesano o instrumento musical</span>
+                            </td>
+                        </tr>
+                        <tr>
+                            <td><span lang="pt">Testes de Resistência</span><span lang="en">Saving Throws</span><span lang="es">Salvaciones</span></td>
+                            <td><span lang="pt">Força, Destreza</span><span lang="en">Strength, Dexterity</span><span lang="es">Fuerza, Destreza</span></td>
+                        </tr>
+                        <tr>
+                            <td><span lang="pt">Perícias (Escolha 2)</span><span lang="en">Skills (Choose 2)</span><span lang="es">Habilidades (Elija 2)</span></td>
+                            <td>
+                                <span lang="pt">Acrobacia, Atletismo, História, Intuição, Religião, Furtividade</span>
+                                <span lang="en">Acrobatics, Athletics, History, Insight, Religion, Stealth</span>
+                                <span lang="es">Acrobacias, Atletismo, Historia, Perspicacia, Religión, Sigilo</span>
+                            </td>
+                        </tr>
+                    </table>
+                </section>
+
+                <!-- Papel no Grupo -->
+                <section>
+                    <h3>
+                         <img src="https://api.iconify.design/game-icons/shield.svg" alt="icon">
+                        <span lang="pt">Papel no Grupo</span>
+                        <span lang="en">Role in the Party</span>
+                        <span lang="es">Rol en el Grupo</span>
+                    </h3>
+                    <ul>
+                        <li>
+                            <strong><span lang="pt">Atacante Móvel:</span><span lang="en">Mobile Skirmisher:</span><span lang="es">Hostigador Móvil:</span></strong>
+                            <span lang="pt"> Alta velocidade e agilidade, ideal para táticas de bater e correr.</span>
+                            <span lang="en"> High speed and agility, ideal for hit-and-run tactics.</span>
+                            <span lang="es"> Alta velocidad y agilidad, ideal para tácticas de golpear y correr.</span>
+                        </li>
+                        <li>
+                            <strong><span lang="pt">Controlador:</span><span lang="en">Controller:</span><span lang="es">Controlador:</span></strong>
+                            <span lang="pt"> Ataque Atordoante e agilidade em campo quebram o ritmo inimigo.</span>
+                            <span lang="en"> Stunning Strike and battlefield agility disrupt enemy flow.</span>
+                            <span lang="es"> Golpe Aturdidor y agilidad en el campo interrumpen el flujo enemigo.</span>
+                        </li>
+                        <li>
+                            <strong><span lang="pt">Suporte:</span><span lang="en">Support:</span><span lang="es">Soporte:</span></strong>
+                            <span lang="pt"> Utilidade defensiva, truques baseados em Foco e cura (via subclasse).</span>
+                            <span lang="en"> Defensive utility, focus-based tricks, and some healing (via subclass).</span>
+                            <span lang="es"> Utilidad defensiva, trucos basados en Foco y algo de curación (vía subclase).</span>
+                        </li>
+                        <li>
+                            <strong><span lang="pt">Tanque (Opcional):</span><span lang="en">Tank (Optional):</span><span lang="es">Tanque (Opcional):</span></strong>
+                            <span lang="pt"> Com CA alta (Defesa Sem Armadura) e Evasão, podem absorver dano surpreendentemente.</span>
+                            <span lang="en"> With high AC (Unarmored Defense) and Evasion, they can surprisingly soak damage.</span>
+                            <span lang="es"> Con CA alta (Defensa sin Armadura) y Evasión, pueden absorber daño sorprendentemente.</span>
+                        </li>
+                    </ul>
+                </section>
+
+                <!-- Guia de Armas do Monge -->
+                <section >
+                    <h3>
+                        <img src="https://api.iconify.design/game-icons/thrown-spear.svg" alt="icon">
+                        <span lang="pt">Guia de Armas do Monge</span>
+                        <span lang="en">Monk Weapons Guide</span>
+                        <span lang="es">Guía de Armas de Monje</span>
+                    </h3>
+                    <p style="margin-bottom: 10px; font-size: 0.95rem;">
+                        <span lang="pt">Nas novas regras (2024), <strong>Armas de Monge</strong> são quaisquer armas corpo a corpo simples e armas marciais que possuam a propriedade Leve. Elas usam Destreza para ataques e dano.</span>
+                        <span lang="en">In the 2024 rules, <strong>Monk Weapons</strong> are any simple melee weapons and martial weapons with the Light property. You can use Dexterity for attack and damage rolls.</span>
+                        <span lang="es">En las reglas de 2024, las <strong>Armas de Monje</strong> son cualquier arma cuerpo a cuerpo simple y armas marciales con la propiedad Ligera. Usan Destreza para ataques y daño.</span>
+                    </p>
+                    <ul>
+                        <li>
+                            <strong><span lang="pt">Bordão</span><span lang="en">Quarterstaff</span><span lang="es">Bastón</span>:</strong> 
+                            <span lang="pt">Versátil, duas mãos (mas não pesada), bom para sinergia com Polearm.</span>
+                            <span lang="en">Versatile, two-handed (but not Heavy), good for Polearm synergy.</span>
+                            <span lang="es">Versátil, a dos manos (pero no pesada), buena sinergia con Polearm.</span>
+                        </li>
+                        <li>
+                            <strong><span lang="pt">Lança</span><span lang="en">Spear</span><span lang="es">Lanza</span>:</strong> 
+                            <span lang="pt">Alcance e versatilidade, usável com Artes Marciais.</span>
+                            <span lang="en">Reach & versatility, usable with Martial Arts.</span>
+                            <span lang="es">Alcance y versatilidad, utilizable con Artes Marciales.</span>
+                        </li>
+                        <li>
+                            <strong><span lang="pt">Armas Leves</span><span lang="en">Light Weapons</span><span lang="es">Armas Ligeras</span>:</strong> 
+                            <span lang="pt">Espadas curtas, foices e adagas se beneficiam por serem Armas de Monge.</span>
+                            <span lang="en">Shortswords, sickles, and daggers benefit greatly from being Monk Weapons.</span>
+                            <span lang="es">Espadas cortas, hoces y dagas se benefician por ser Armas de Monje.</span>
+                        </li>
+                        <li>
+                            <strong><span lang="pt">Clava</span><span lang="en">Club</span><span lang="es">Porra</span>:</strong> 
+                            <span lang="pt">Leve e amigável para o monge.</span>
+                            <span lang="en">Light and monk-friendly.</span>
+                            <span lang="es">Ligera y amigable para el monje.</span>
+                        </li>
+                        <li>
+                            <strong><span lang="pt">Dardo</span><span lang="en">Dart</span><span lang="es">Dardo</span>:</strong> 
+                            <span lang="pt">Ótimo para ataques à distância usando Destreza.</span>
+                            <span lang="en">Great for ranged attacks using Dexterity.</span>
+                            <span lang="es">Ideal para ataques a distancia usando Destreza.</span>
+                        </li>
+                    </ul>
+                </section>
+            </div>
+
+            <!-- Coluna Direita -->
+            <div>
+                <!-- Principais Características de Classe -->
+                <section>
+                    <h3>
+                        <img src="https://api.iconify.design/game-icons/yin-yang.svg" alt="icon">
+                        <span lang="pt">Principais Características</span>
+                        <span lang="en">Key Class Features</span>
+                        <span lang="es">Características Clave</span>
+                    </h3>
+                    
+                    <ul class="features-list">
+                        <li class="feature-item">
+                            <div class="feature-title"><span lang="pt">Defesa Sem Armadura (Nível 1)</span><span lang="en">Unarmored Defense (Lvl 1)</span><span lang="es">Defensa sin Armadura (Nivel 1)</span></div>
+                            <div>
+                                <span lang="pt">CA = 10 + mod DES + mod SAB — sem armadura ou escudo necessário</span>
+                                <span lang="en">AC = 10 + mod DEX + mod WIS — no armor or shield required</span>
+                                <span lang="es">CA = 10 + mod DES + mod SAB — no requiere armadura ni escudo</span>
+                            </div>
+                        </li>
+
+                        <li class="feature-item">
+                            <div class="feature-title"><span lang="pt">Artes Marciais (Nível 1)</span><span lang="en">Martial Arts (Lvl 1)</span><span lang="es">Artes Marciales (Nivel 1)</span></div>
+                            <ul class="sub-list">
+                                <li><span lang="pt">Use DES para ataques desarmados, armas de monge, Agarrar e Empurrar</span><span lang="en">Use DEX for unarmed strikes, monk weapons, Grapple and Shove</span><span lang="es">Usa DES para golpes desarmados, armas de monje, Agarrar y Empujar</span></li>
+                                <li><span lang="pt">Ataque desarmado bônus (não requer Ação de Ataque antes)</span><span lang="en">Bonus unarmed attack (doesn't require Attack Action first)</span><span lang="es">Ataque desarmado extra (no requiere Acción de Ataque antes)</span></li>
+                                <li><span lang="pt">O dado de dano começa em 1d6 e aumenta até 1d12</span><span lang="en">Damage die starts at 1d6 and scales up to 1d12</span><span lang="es">El dado de daño comienza en 1d6 y escala hasta 1d12</span></li>
+                            </ul>
+                        </li>
+
+                        <li class="feature-item">
+                            <div class="feature-title"><span lang="pt">Foco do Monge (Nível 2+)</span><span lang="en">Monk's Focus (Lvl 2+)</span><span lang="es">Foco del Monje (Nivel 2+)</span></div>
+                            <ul class="sub-list">
+                                <li><span lang="pt">Reserva de pontos (antigo Ki) = Nível de Monge</span><span lang="en">Pool of points (formerly Ki) = Monk level</span><span lang="es">Reserva de puntos (antes Ki) = Nivel de Monje</span></li>
+                                <li><span lang="pt">Metabolismo Incomum (Nv 2): Rolar Iniciativa restaura todos os pontos (1/Dia)</span><span lang="en">Uncanny Metabolism (Lvl 2): Rolling Initiative restores all points (1/Day)</span><span lang="es">Metabolismo Inusual (Nv 2): Tirar Iniciativa restaura todos los puntos (1/Día)</span></li>
+                                <li><strong><span lang="pt">Uso de Foco/Ações Bônus:</span><span lang="en">Focus Uses/Bonus Actions:</span><span lang="es">Uso de Foco/Acciones Adicionales:</span></strong>
+                                    <ul style="padding-left: 15px; margin-top: 5px;">
+                                        <li>• <strong><span lang="pt">Rajada de Golpes:</span><span lang="en">Flurry of Blows:</span><span lang="es">Ráfaga de Golpes:</span></strong> <span lang="pt">Gaste 1 pt para +2 ataques extras</span><span lang="en">Spend 1 pt for +2 extra attacks</span><span lang="es">Gasta 1 pt para +2 ataques extras</span></li>
+                                        <li>• <strong><span lang="pt">Defesa Paciente:</span><span lang="en">Patient Defense:</span><span lang="es">Defensa Paciente:</span></strong> <span lang="pt">Desengajar grátis, ou gaste 1 pt para Desengajar + Esquivar</span><span lang="en">Free Disengage, or spend 1 pt to Disengage + Dodge</span><span lang="es">Destrabar gratis, o gasta 1 pt para Destrabar + Esquivar</span></li>
+                                        <li>• <strong><span lang="pt">Passo do Vento:</span><span lang="en">Step of the Wind:</span><span lang="es">Paso del Viento:</span></strong> <span lang="pt">Disparar grátis, ou gaste 1 pt para Disparar + Desengajar + dobro de salto</span><span lang="en">Free Dash, or spend 1 pt to Dash + Disengage + double jump</span><span lang="es">Correr gratis, o gasta 1 pt para Correr + Destrabar + doble salto</span></li>
+                                    </ul>
+                                </li>
+                            </ul>
+                        </li>
+
+                        <li class="feature-item">
+                            <div class="feature-title"><span lang="pt">Movimento Sem Armadura (Nível 2+)</span><span lang="en">Unarmored Movement (Lvl 2+)</span><span lang="es">Movimiento sin Armadura (Nivel 2+)</span></div>
+                            <div>
+                                <span lang="pt">Bônus na velocidade aumenta com o nível. Corre em superfícies verticais e sobre a água (Nível 9).</span>
+                                <span lang="en">Bonus to speed increases with level. Run on vertical surfaces and across water (Lvl 9).</span>
+                                <span lang="es">El bono de velocidad aumenta con el nivel. Corre en superficies verticales y sobre el agua (Nivel 9).</span>
+                            </div>
+                        </li>
+
+                        <li class="feature-item">
+                            <div class="feature-title"><span lang="pt">Defletir Ataques (Nível 3)</span><span lang="en">Deflect Attacks (Lvl 3)</span><span lang="es">Desviar Ataques (Nivel 3)</span></div>
+                            <div>
+                                <span lang="pt">Reduz dano de ataques <strong>corpo a corpo</strong> ou <strong>à distância</strong> (dano Físico), podendo revidar.</span>
+                                <span lang="en">Reduce damage from <strong>melee</strong> and <strong>ranged</strong> attacks (Physical damage), can strike back.</span>
+                                <span lang="es">Reduce el daño de ataques <strong>cuerpo a cuerpo</strong> o <strong>a distancia</strong> (daño Físico), pudiendo devolver el golpe.</span>
+                            </div>
+                        </li>
+
+                        <li class="feature-item">
+                            <div class="feature-title"><span lang="pt">Ataque Atordoante (Nível 5+)</span><span lang="en">Stunning Strike (Lvl 5+)</span><span lang="es">Golpe Aturdidor (Nivel 5+)</span></div>
+                            <div>
+                                <span lang="pt">1/turno. Força teste de CON ou atordoa. No sucesso do alvo, a velocidade dele cai pela metade e o próximo ataque contra ele tem vantagem.</span>
+                                <span lang="en">1/turn. Force a CON save or stun. On success, target's speed is halved and next attack against them has advantage.</span>
+                                <span lang="es">1/turno. Fuerza salvación de CON o aturde. En éxito, la velocidad del blanco se reduce a la mitad y el próximo ataque contra él tiene ventaja.</span>
+                            </div>
+                        </li>
+
+                        <li class="feature-item">
+                            <div class="feature-title"><span lang="pt">Ataque Extra (Nível 5)</span><span lang="en">Extra Attack (Lvl 5)</span><span lang="es">Ataque Extra (Nivel 5)</span></div>
+                            <div>
+                                <span lang="pt">Ataca duas vezes quando realiza a ação de Ataque.</span>
+                                <span lang="en">Attack twice when you take the Attack action.</span>
+                                <span lang="es">Ataca dos veces cuando realizas la acción de Ataque.</span>
+                            </div>
+                        </li>
+
+                        <li class="feature-item">
+                            <div class="feature-title"><span lang="pt">Evasão (Nível 7)</span><span lang="en">Evasion (Lvl 7)</span><span lang="es">Evasión (Nivel 7)</span></div>
+                            <div>
+                                <span lang="pt">Não sofre dano em testes bem-sucedidos de DES.</span>
+                                <span lang="en">Take no damage on successful DEX saves.</span>
+                                <span lang="es">No recibes daño en salvaciones exitosas de DES.</span>
+                            </div>
+                        </li>
+
+                        <li class="feature-item">
+                            <div class="feature-title"><span lang="pt">Corpo Vazio (Nível 18)</span><span lang="en">Empty Body (Lvl 18)</span><span lang="es">Cuerpo Vacío (Nivel 18)</span></div>
+                            <div>
+                                <span lang="pt">Fique invisível por 1 minuto e ganhe resistência a todos os danos.</span>
+                                <span lang="en">Turn invisible for 1 minute and gain resistance to all damage.</span>
+                                <span lang="es">Vuélvete invisible por 1 minuto y gana resistencia a todo el daño.</span>
+                            </div>
+                        </li>
+                    </ul>
+                </section>
+            </div>
+        </div>
+
+        <!-- Aviso Legal WotC (Fan Content Policy) -->
+        <footer>
+            <span lang="pt">Este projeto é um Conteúdo de Fã não oficial permitido sob a Política de Conteúdo de Fãs. Não é aprovado ou endossado pela Wizards. Partes dos materiais utilizados são propriedade da Wizards of the Coast. ©Wizards of the Coast LLC.</span>
+            <span lang="en">This project is unofficial Fan Content permitted under the Fan Content Policy. Not approved/endorsed by Wizards. Portions of the materials used are property of Wizards of the Coast. ©Wizards of the Coast LLC.</span>
+            <span lang="es">Este proyecto es Contenido de Fans no oficial permitido bajo la Política de Contenido de Fans. No está aprobado ni respaldado por Wizards. Porciones de los materiales utilizados son propiedad de Wizards of the Coast. ©Wizards of the Coast LLC.</span>
+        </footer>
+    </div>
+
+    <script>
+        function setLanguage(lang, element) {
+            document.body.className = 'lang-' + lang;
+            
+            // Update active button style
+            const buttons = document.querySelectorAll('.lang-btn');
+            buttons.forEach(btn => btn.classList.remove('active'));
+            
+            // Find the clicked button and make it active
+            element.classList.add('active');
+        }
+    </script>
+</body>
+</html>

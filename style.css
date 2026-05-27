@@ -1,0 +1,55 @@
+* { box-sizing: border-box; margin: 0; padding: 0; font-family: 'Cinzel', 'Georgia', serif; }
+body { background-color: var(--bg-color); color: var(--text-color); padding: 20px; line-height: 1.6; }
+
+/* Efeito de Papel Queimado no Container */
+.container { max-width: 1000px; margin: 0 auto; background-color: #f9f2e3; background-image: radial-gradient(ellipse at center, transparent 50%, rgba(139, 69, 19, 0.2) 80%, rgba(60, 20, 0, 0.7) 100%); border: 1px solid #5a3214; padding: 30px; border-radius: 4px; box-shadow: 0 10px 25px rgba(0,0,0,0.4), inset 0 0 30px rgba(90, 40, 10, 0.4); position: relative; overflow: hidden; }
+
+/* Imagem de Fundo (A Imagem em si fica no HTML de cada classe) */
+.container::before { content: ""; position: absolute; top: 0; left: 0; width: 100%; height: 100%; background-repeat: no-repeat; background-position: center; background-size: 70%; opacity: 0.08; pointer-events: none; }
+.container > * { position: relative; z-index: 1; }
+
+/* Top Bar e Idiomas */
+.top-bar { display: flex; justify-content: space-between; align-items: center; margin-bottom: 20px; }
+.back-btn { text-decoration: none; color: var(--accent-dark); font-weight: bold; border: 1px solid var(--accent-color); padding: 5px 15px; border-radius: 3px; transition: all 0.3s ease; }
+.back-btn:hover { background-color: var(--accent-color); color: white; }
+.lang-selector { display: flex; gap: 10px; }
+.lang-btn { background-color: transparent; border: 1px solid var(--accent-color); color: var(--accent-dark); padding: 5px 15px; cursor: pointer; font-weight: bold; border-radius: 3px; transition: all 0.3s ease; }
+.lang-btn.active, .lang-btn:hover { background-color: var(--accent-color); color: white; }
+
+/* Header */
+header { text-align: center; border-bottom: 2px double var(--accent-color); padding-bottom: 20px; margin-bottom: 30px; }
+header h1 { font-size: 2.5rem; color: var(--accent-dark); text-transform: uppercase; letter-spacing: 2px; }
+header h2 { font-size: 1.5rem; font-weight: 300; color: #555; text-transform: uppercase; letter-spacing: 1px; }
+
+/* Layout das Colunas e Seções */
+.grid { display: grid; grid-template-columns: 1fr 1fr; gap: 30px; }
+@media (max-width: 768px) { .grid { grid-template-columns: 1fr; } }
+section { margin-bottom: 25px; }
+h3 { font-size: 1.3rem; color: var(--accent-dark); border-bottom: 1px solid var(--border-color); padding-bottom: 5px; margin-bottom: 15px; text-transform: uppercase; display: flex; align-items: center; gap: 10px; }
+h3 img { width: 24px; height: 24px; filter: sepia(0.5) hue-rotate(15deg) saturate(3); }
+
+/* Listas e Sub-listas */
+ul { list-style-type: none; padding-left: 0; }
+li { margin-bottom: 10px; position: relative; padding-left: 20px; }
+li::before { content: "✦"; position: absolute; left: 0; color: var(--accent-color); }
+
+.features-list { list-style: none; padding-left: 0; }
+.features-list > li { padding-left: 10px; }
+.features-list > li::before { display: none; }
+.feature-item { border-left: 3px solid var(--accent-color); padding: 12px 20px; margin-bottom: 15px; border-radius: 0 4px 4px 0; }
+.feature-title { font-weight: bold; color: var(--text-color); }
+
+.sub-list { padding-left: 20px; margin-top: 5px; }
+.sub-list li::before { content: "✧"; }
+
+/* Lógica Ocultar Idiomas */
+body [lang="pt"], body [lang="en"], body [lang="es"] { display: none; }
+body.lang-pt [lang="pt"] { display: block; } body.lang-pt span[lang="pt"], body.lang-pt i[lang="pt"] { display: inline; }
+body.lang-en [lang="en"] { display: block; } body.lang-en span[lang="en"], body.lang-en i[lang="en"] { display: inline; }
+body.lang-es [lang="es"] { display: block; } body.lang-es span[lang="es"], body.lang-es i[lang="es"] { display: inline; }
+
+/* Tabelas Gerais */
+.overview-table { width: 100%; border-collapse: collapse; }
+.overview-table td { padding: 6px 0; border-bottom: 1px dashed var(--border-color); }
+.overview-table td:first-child { font-weight: bold; width: 40%; color: var(--accent-dark); }
+footer { margin-top: 30px; padding-top: 15px; border-top: 1px dashed var(--border-color); font-size: 0.75rem; text-align: center; color: #888; }

@@ -1,0 +1,100 @@
+<!DOCTYPE html>
+<html lang="pt">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Sorcerer Quick Reference Card (5.5E)</title>
+    <link rel="stylesheet" href="../style.css">
+    <style>
+        :root { --bg-color: #fcf5f6; --text-color: #2c2c2c; --accent-color: #f44336; --accent-dark: #c62828; --border-color: #e8d0d4; --card-bg: #ffffff; }
+        .container::before { background-image: url('../img/feiticeiro.jpg'); }
+    </style>
+</head>
+<body class="lang-pt">
+    <div class="container">
+        <div class="top-bar">
+            <a href="../index.html" class="back-btn"><span lang="pt">&larr; Menu de Classes</span><span lang="en">&larr; Class Menu</span><span lang="es">&larr; Menú de Clases</span></a>
+            <div class="lang-selector">
+                <button class="lang-btn active" onclick="setLanguage('pt', this)">PT</button><button class="lang-btn" onclick="setLanguage('en', this)">EN</button><button class="lang-btn" onclick="setLanguage('es', this)">ES</button>
+            </div>
+        </div>
+        <header>
+            <h1>Sorcerer</h1>
+            <h2><span lang="pt">Cartão de Referência (5.5E)</span><span lang="en">Quick Reference Card (5.5E)</span><span lang="es">Tarjeta de Referencia (5.5E)</span></h2>
+        </header>
+        <div class="grid">
+            <div>
+                <section>
+                    <h3><img src="https://api.iconify.design/game-icons/scroll-unfurled.svg" alt="icon"><span lang="pt">Visão Geral</span><span lang="en">Class Overview</span><span lang="es">Descripción General</span></h3>
+                    <table class="overview-table">
+                        <tr><td><span lang="pt">Dado de Vida</span><span lang="en">Hit Die</span><span lang="es">Dado de Golpe</span></td><td>d6</td></tr>
+                        <tr><td><span lang="pt">Atributo</span><span lang="en">Primary</span><span lang="es">Atributo</span></td><td><span lang="pt">Carisma</span><span lang="en">Charisma</span><span lang="es">Carisma</span></td></tr>
+                        <tr><td><span lang="pt">Armaduras</span><span lang="en">Armor</span><span lang="es">Armaduras</span></td><td><span lang="pt">Nenhuma</span><span lang="en">None</span><span lang="es">Ninguna</span></td></tr>
+                        <tr><td><span lang="pt">Armas</span><span lang="en">Weapons</span><span lang="es">Armas</span></td><td><span lang="pt">Armas Simples</span><span lang="en">Simple Weapons</span><span lang="es">Armas Simples</span></td></tr>
+                        <tr><td><span lang="pt">Testes (Saves)</span><span lang="en">Saves</span><span lang="es">Salvaciones</span></td><td><span lang="pt">Constituição, Carisma</span><span lang="en">Constitution, Charisma</span><span lang="es">Constitución, Carisma</span></td></tr>
+                    </table>
+                </section>
+                <section>
+                    <h3><img src="https://api.iconify.design/game-icons/shield.svg" alt="icon"><span lang="pt">Papel no Grupo</span><span lang="en">Role in the Party</span><span lang="es">Rol en el Grupo</span></h3>
+                    <ul>
+                        <li><strong><span lang="pt">Artilharia Arcana:</span><span lang="en">Arcane Artillery:</span><span lang="es">Artillería Arcana:</span></strong>
+                            <span lang="pt"> Especialista em magias de dano em área (AoE) e explosão rápida.</span><span lang="en"> Specialist in Area of Effect (AoE) and quick burst damage spells.</span><span lang="es"> Especialista en conjuros de daño en área (AoE) y explosión rápida.</span></li>
+                        <li><strong><span lang="pt">Manipulador de Magia:</span><span lang="en">Magic Manipulator:</span><span lang="es">Manipulador de Magia:</span></strong>
+                            <span lang="pt"> Usa Metamágica para curvar as regras normais das magias.</span><span lang="en"> Uses Metamagic to bend the normal rules of spellcasting.</span><span lang="es"> Usa Metamagia para alterar las reglas normales de los conjuros.</span></li>
+                    </ul>
+                </section>
+                <section>
+                    <h3><img src="https://api.iconify.design/game-icons/crossed-swords.svg" alt="icon"><span lang="pt">Guia de Armas</span><span lang="en">Weapons Guide</span><span lang="es">Guía de Armas</span></h3>
+                    <ul>
+                        <li><strong><span lang="pt">Truques (Magias):</span><span lang="en">Cantrips (Spells):</span><span lang="es">Trucos (Conjuros):</span></strong>
+                            <span lang="pt"> Raio de Fogo ou Raio de Gelo são suas "armas" principais sempre.</span><span lang="en"> Fire Bolt or Ray of Frost are your main "weapons" always.</span><span lang="es"> Descarga de Fuego o Rayo de Escarcha son tus "armas" principales siempre.</span></li>
+                        <li><strong><span lang="pt">Besta Leve:</span><span lang="en">Light Crossbow:</span><span lang="es">Ballesta Ligera:</span></strong>
+                            <span lang="pt"> Útil apenas nos primeiros níveis antes dos truques ficarem fortes.</span><span lang="en"> Only useful in early levels before cantrips get strong.</span><span lang="es"> Útil solo en los primeros niveles antes de que los trucos sean fuertes.</span></li>
+                        <li><strong><span lang="pt">Adaga / Bordão:</span><span lang="en">Dagger / Quarterstaff:</span><span lang="es">Daga / Bastón:</span></strong>
+                            <span lang="pt"> Apenas para emergências ou como Foco Arcano. Evite o corpo a corpo!</span><span lang="en"> Only for emergencies or as an Arcane Focus. Avoid melee!</span><span lang="es"> Solo para emergencias o como Foco Arcano. ¡Evita el cuerpo a cuerpo!</span></li>
+                    </ul>
+                </section>
+            </div>
+            <div>
+                <section>
+                    <h3><img src="https://api.iconify.design/game-icons/magic-swirl.svg" alt="icon"><span lang="pt">Características Base</span><span lang="en">Key Features</span><span lang="es">Características Clave</span></h3>
+                    <ul class="features-list">
+                        <li class="feature-item">
+                            <div class="feature-title"><span lang="pt">Feitiçaria Inata (Nv 1)</span><span lang="en">Innate Sorcery (Lvl 1)</span><span lang="es">Hechicería Innata (Nv 1)</span></div>
+                            <div><span lang="pt">Novo! Ação bônus (1 min): +1 na CD de Magias e Vantagem em ataques de magia de Feiticeiro.</span><span lang="en">New! Bonus action (1 min): +1 Spell DC and Advantage on Sorcerer spell attacks.</span><span lang="es">¡Nuevo! Acción adicional (1 min): +1 CD de Conjuros y Ventaja en ataques de hechizos.</span></div>
+                        </li>
+                        <li class="feature-item">
+                            <div class="feature-title"><span lang="pt">Fonte de Magia (Nv 2)</span><span lang="en">Font of Magic (Lvl 2)</span><span lang="es">Fuente de Magia (Nv 2)</span></div>
+                            <div><span lang="pt">Pontos de Feitiçaria para recuperar espaços de magia (ou usar em Metamágica).</span><span lang="en">Sorcery Points to recover spell slots (or use with Metamagic).</span><span lang="es">Puntos de Hechicería para recuperar espacios (o usar en Metamagia).</span></div>
+                        </li>
+                        <li class="feature-item">
+                            <div class="feature-title"><span lang="pt">Metamágica (Nv 2)</span><span lang="en">Metamagic (Lvl 2)</span><span lang="es">Metamagia (Nv 2)</span></div>
+                            <div><span lang="pt">Modifique magias (Gêmea, Acelerada, etc). Nas novas regras, começa logo no Nv 2!</span><span lang="en">Modify spells (Twinned, Quickened). Now unlocked instantly at Lvl 2!</span><span lang="es">Modifica conjuros (Gemela, Acelerada). ¡Ahora desbloqueado en Nv 2!</span></div>
+                        </li>
+                    <li class="feature-item">
+                        <div class="feature-title"><span lang="pt">Restauração Feérica (Nv 5)</span><span lang="en">Sorcerous Restoration (Lvl 5)</span><span lang="es">Restauración Hechicera (Nv 5)</span></div>
+                        <div><span lang="pt">Novo! Quando você rola Iniciativa e não tem Pontos de Feitiçaria, recupera parte deles.</span><span lang="en">New! When you roll Initiative and have no Sorcery Points, you regain some of them.</span><span lang="es">¡Nuevo! Cuando tiras Iniciativa y no tienes Puntos de Hechicería, recuperas parte de ellos.</span></div>
+                    </li>
+                    <li class="feature-item">
+                        <div class="feature-title"><span lang="pt">Fúria Mágica (Nv 10)</span><span lang="en">Sorcery Incarnate (Lvl 10)</span><span lang="es">Encarnación de Hechicería (Nv 10)</span></div>
+                        <div><span lang="pt">Recupere pontos no Descanso Curto e use DUAS metamágicas na mesma magia durante a Feitiçaria Inata.</span><span lang="en">Regain points on Short Rest and use TWO metamagics on the same spell during Innate Sorcery.</span><span lang="es">Recupera puntos en Descanso Corto y usa DOS metamagias en el mismo conjuro durante Hechicería Innata.</span></div>
+                    </li>
+                    <li class="feature-item">
+                        <div class="feature-title"><span lang="pt">Apoteose Arcana (Nv 20)</span><span lang="en">Arcane Apotheosis (Lvl 20)</span><span lang="es">Apoteosis Arcana (Nv 20)</span></div>
+                        <div><span lang="pt">Durante a Feitiçaria Inata, 1 Metamágica a cada turno não custa Pontos de Feitiçaria!</span><span lang="en">While Innate Sorcery is active, 1 Metamagic option each turn costs no Sorcery Points!</span><span lang="es">¡Durante Hechicería Innata, 1 Metamagia cada turno no cuesta Puntos de Hechicería!</span></div>
+                    </li>
+                    </ul>
+                </section>
+            </div>
+        </div>
+    </div>
+    <script>
+        function setLanguage(lang, element) {
+            document.body.className = 'lang-' + lang;
+            const buttons = document.querySelectorAll('.lang-btn');
+            buttons.forEach(btn => btn.classList.remove('active'));
+            element.classList.add('active');
+        }
+    </script>
+</body>
+</html>

@@ -1,0 +1,125 @@
+<!DOCTYPE html>
+<html lang="pt">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>D&D 5.5E Quick Reference - Classes</title>
+    <style>
+        :root {
+            --bg-color: #faf8f5;
+            --text-color: #2c2c2c;
+            --accent-color: #bfa15f;
+            --accent-dark: #8c6d39;
+            --border-color: #e0dacb;
+            --card-bg: #ffffff;
+        }
+        * { box-sizing: border-box; margin: 0; padding: 0; font-family: 'Cinzel', 'Georgia', serif; }
+        body { background-color: var(--bg-color); color: var(--text-color); padding: 20px; line-height: 1.6; }
+        
+        /* Efeito de Papel Queimado no Container */
+        .container { 
+            max-width: 1000px; 
+            margin: 0 auto; 
+            background-color: #f9f2e3; /* Cor base de pergaminho */
+            background-image: radial-gradient(ellipse at center, transparent 50%, rgba(139, 69, 19, 0.2) 80%, rgba(60, 20, 0, 0.7) 100%);
+            border: 1px solid #5a3214; 
+            padding: 30px; 
+            border-radius: 4px; 
+            box-shadow: 0 10px 25px rgba(0,0,0,0.4), inset 0 0 30px rgba(90, 40, 10, 0.4); 
+        }
+        .top-bar { display: flex; justify-content: flex-end; margin-bottom: 20px; }
+        .lang-btn { background-color: transparent; border: 1px solid var(--accent-color); color: var(--accent-dark); padding: 5px 15px; cursor: pointer; font-weight: bold; border-radius: 3px; transition: all 0.3s ease; margin-left: 10px; }
+        .lang-btn.active, .lang-btn:hover { background-color: var(--accent-color); color: white; }
+        
+        header { text-align: center; border-bottom: 2px double var(--accent-color); padding-bottom: 20px; margin-bottom: 30px; }
+        header h1 { font-size: 2.5rem; color: var(--accent-dark); letter-spacing: 2px; text-transform: uppercase; }
+        header h2 { font-size: 1.2rem; color: #555; font-weight: 300; }
+
+        .grid-classes { display: grid; grid-template-columns: repeat(auto-fill, minmax(200px, 1fr)); gap: 20px; }
+        
+        .class-card { display: flex; flex-direction: column; align-items: center; justify-content: center; padding: 25px 15px; background: #fcfbf7; border: 1px solid var(--border-color); border-radius: 6px; text-decoration: none; color: var(--accent-dark); font-weight: bold; font-size: 1.1rem; transition: all 0.3s ease; text-transform: uppercase;}
+        .class-card img { width: 45px; height: 45px; margin-bottom: 15px; filter: sepia(0.5) hue-rotate(15deg) saturate(3); transition: all 0.3s ease; }
+        .class-card:hover { background: var(--hover-color, var(--accent-color)); border-color: var(--hover-color, var(--accent-color)); color: white; transform: translateY(-3px); box-shadow: 0 8px 15px rgba(0, 0, 0, 0.2); }
+        .class-card:hover img { filter: brightness(0) invert(1); }
+        
+        .disabled { opacity: 0.4; cursor: not-allowed; background: #f5f5f5; border-color: #ddd; color: #999; }
+        .disabled:hover { background: #f5f5f5; color: #999; transform: none; box-shadow: none; }
+        .disabled:hover img { filter: grayscale(1); }
+
+        body [lang="pt"], body [lang="en"], body [lang="es"] { display: none; }
+        body.lang-pt [lang="pt"] { display: block; } body.lang-pt span[lang="pt"] { display: inline; }
+        body.lang-en [lang="en"] { display: block; } body.lang-en span[lang="en"] { display: inline; }
+        body.lang-es [lang="es"] { display: block; } body.lang-es span[lang="es"] { display: inline; }
+
+        footer { margin-top: 40px; padding-top: 15px; border-top: 1px dashed var(--border-color); font-size: 0.75rem; text-align: center; color: #888; }
+    </style>
+</head>
+<body class="lang-pt">
+    <div class="container">
+        <div class="top-bar">
+            <button class="lang-btn active" onclick="setLanguage('pt', this)">PT</button>
+            <button class="lang-btn" onclick="setLanguage('en', this)">EN</button>
+            <button class="lang-btn" onclick="setLanguage('es', this)">ES</button>
+        </div>
+        <header>
+            <h1>D&D 5.5E Classes</h1>
+            <h2>
+                <span lang="pt">Escolha sua Classe (Regras 2024)</span>
+                <span lang="en">Choose your Class (2024 Rules)</span>
+                <span lang="es">Elige tu Clase (Reglas 2024)</span>
+            </h2>
+        </header>
+        <div class="grid-classes">
+            <a href="classes/barbarian.html" class="class-card" style="--hover-color: #e65100;">
+                <img src="https://api.iconify.design/game-icons/barbute.svg" alt="icon"><span lang="pt">Bárbaro</span><span lang="en">Barbarian</span><span lang="es">Bárbaro</span>
+            </a>
+            <a href="classes/bard.html" class="class-card" style="--hover-color: #e91e63;">
+                <img src="https://api.iconify.design/game-icons/lyre.svg" alt="icon"><span lang="pt">Bardo</span><span lang="en">Bard</span><span lang="es">Bardo</span>
+            </a>
+            <a href="classes/cleric.html" class="class-card" style="--hover-color: #03a9f4;">
+                <img src="https://api.iconify.design/game-icons/holy-symbol.svg" alt="icon"><span lang="pt">Clérigo</span><span lang="en">Cleric</span><span lang="es">Clérigo</span>
+            </a>
+            <a href="classes/druid.html" class="class-card" style="--hover-color: #4caf50;">
+                <img src="https://api.iconify.design/game-icons/oak-leaf.svg" alt="icon"><span lang="pt">Druida</span><span lang="en">Druid</span><span lang="es">Druida</span>
+            </a>
+            <a href="classes/fighter.html" class="class-card" style="--hover-color: #c93a3a;">
+                <img src="https://api.iconify.design/game-icons/crossed-swords.svg" alt="icon"><span lang="pt">Guerreiro</span><span lang="en">Fighter</span><span lang="es">Guerrero</span>
+            </a>
+            <a href="classes/monk.html" class="class-card" style="--hover-color: #bfa15f;">
+                <img src="https://api.iconify.design/game-icons/fist.svg" alt="icon"><span lang="pt">Monge</span><span lang="en">Monk</span><span lang="es">Monje</span>
+            </a>
+            <a href="classes/paladin.html" class="class-card" style="--hover-color: #ffc107;">
+                <img src="https://api.iconify.design/game-icons/crested-helmet.svg" alt="icon"><span lang="pt">Paladino</span><span lang="en">Paladin</span><span lang="es">Paladín</span>
+            </a>
+            <a href="classes/ranger.html" class="class-card" style="--hover-color: #8bc34a;">
+                <img src="https://api.iconify.design/game-icons/bow-arrow.svg" alt="icon"><span lang="pt">Patrulheiro</span><span lang="en">Ranger</span><span lang="es">Explorador</span>
+            </a>
+            <a href="classes/rogue.html" class="class-card" style="--hover-color: #607d8b;">
+                <img src="https://api.iconify.design/game-icons/hood.svg" alt="icon"><span lang="pt">Ladino</span><span lang="en">Rogue</span><span lang="es">Pícaro</span>
+            </a>
+            <a href="classes/sorcerer.html" class="class-card" style="--hover-color: #f44336;">
+                <img src="https://api.iconify.design/game-icons/magic-swirl.svg" alt="icon"><span lang="pt">Feiticeiro</span><span lang="en">Sorcerer</span><span lang="es">Hechicero</span>
+            </a>
+            <a href="classes/warlock.html" class="class-card" style="--hover-color: #9c27b0;">
+                <img src="https://api.iconify.design/game-icons/warlock-eye.svg" alt="icon"><span lang="pt">Bruxo</span><span lang="en">Warlock</span><span lang="es">Brujo</span>
+            </a>
+            <a href="classes/wizard.html" class="class-card" style="--hover-color: #3f51b5;">
+                <img src="https://api.iconify.design/game-icons/wizard-staff.svg" alt="icon"><span lang="pt">Mago</span><span lang="en">Wizard</span><span lang="es">Mago</span>
+            </a>
+        </div>
+        <footer>
+            <span lang="pt">Este projeto é um Conteúdo de Fã não oficial permitido sob a Política de Conteúdo de Fãs. Não é aprovado pela Wizards. ©Wizards of the Coast LLC.</span>
+            <span lang="en">This project is unofficial Fan Content permitted under the Fan Content Policy. Not approved by Wizards. ©Wizards of the Coast LLC.</span>
+            <span lang="es">Este proyecto es Contenido de Fans no oficial permitido bajo la Política de Contenido de Fans. No está aprobado por Wizards. ©Wizards of the Coast LLC.</span>
+        </footer>
+    </div>
+    <script>
+        function setLanguage(lang, element) {
+            document.body.className = 'lang-' + lang;
+            const buttons = document.querySelectorAll('.lang-btn');
+            buttons.forEach(btn => btn.classList.remove('active'));
+            element.classList.add('active');
+        }
+    </script>
+</body>
+</html>

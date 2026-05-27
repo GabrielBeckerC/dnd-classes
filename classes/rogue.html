@@ -1,0 +1,100 @@
+<!DOCTYPE html>
+<html lang="pt">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Rogue Quick Reference Card (5.5E)</title>
+    <link rel="stylesheet" href="../style.css">
+    <style>
+        :root { --bg-color: #f5f5f5; --text-color: #2c2c2c; --accent-color: #607d8b; --accent-dark: #37474f; --border-color: #e0e0e0; --card-bg: #ffffff; }
+        .container::before { background-image: url('../img/ladino.jpg'); }
+    </style>
+</head>
+<body class="lang-pt">
+    <div class="container">
+        <div class="top-bar">
+            <a href="../index.html" class="back-btn"><span lang="pt">&larr; Menu de Classes</span><span lang="en">&larr; Class Menu</span><span lang="es">&larr; Menú de Clases</span></a>
+            <div class="lang-selector">
+                <button class="lang-btn active" onclick="setLanguage('pt', this)">PT</button><button class="lang-btn" onclick="setLanguage('en', this)">EN</button><button class="lang-btn" onclick="setLanguage('es', this)">ES</button>
+            </div>
+        </div>
+        <header>
+            <h1>Rogue</h1>
+            <h2><span lang="pt">Cartão de Referência (5.5E)</span><span lang="en">Quick Reference Card (5.5E)</span><span lang="es">Tarjeta de Referencia (5.5E)</span></h2>
+        </header>
+        <div class="grid">
+            <div>
+                <section>
+                    <h3><img src="https://api.iconify.design/game-icons/scroll-unfurled.svg" alt="icon"><span lang="pt">Visão Geral</span><span lang="en">Class Overview</span><span lang="es">Descripción General</span></h3>
+                    <table class="overview-table">
+                        <tr><td><span lang="pt">Dado de Vida</span><span lang="en">Hit Die</span><span lang="es">Dado de Golpe</span></td><td>d8</td></tr>
+                        <tr><td><span lang="pt">Atributo</span><span lang="en">Primary</span><span lang="es">Atributo</span></td><td><span lang="pt">Destreza</span><span lang="en">Dexterity</span><span lang="es">Destreza</span></td></tr>
+                        <tr><td><span lang="pt">Armaduras</span><span lang="en">Armor</span><span lang="es">Armaduras</span></td><td><span lang="pt">Armaduras Leves</span><span lang="en">Light Armor</span><span lang="es">Armaduras Ligeras</span></td></tr>
+                        <tr><td><span lang="pt">Armas</span><span lang="en">Weapons</span><span lang="es">Armas</span></td><td><span lang="pt">Simples e Marciais (Acuidade/Leves)</span><span lang="en">Simple, Martial (Finesse/Light)</span><span lang="es">Simples, Marciales (Sutileza/Ligeras)</span></td></tr>
+                        <tr><td><span lang="pt">Testes (Saves)</span><span lang="en">Saves</span><span lang="es">Salvaciones</span></td><td><span lang="pt">Destreza, Inteligência</span><span lang="en">Dexterity, Intelligence</span><span lang="es">Destreza, Inteligencia</span></td></tr>
+                    </table>
+                </section>
+                <section>
+                    <h3><img src="https://api.iconify.design/game-icons/shield.svg" alt="icon"><span lang="pt">Papel no Grupo</span><span lang="en">Role in the Party</span><span lang="es">Rol en el Grupo</span></h3>
+                    <ul>
+                        <li><strong><span lang="pt">Assassino Furtivo:</span><span lang="en">Stealth Assassin:</span><span lang="es">Asesino Sigiloso:</span></strong>
+                            <span lang="pt"> Dano massivo em alvo único com Ataque Furtivo.</span><span lang="en"> Massive single-target damage using Sneak Attack.</span><span lang="es"> Daño masivo a un solo objetivo usando Ataque Furtivo.</span></li>
+                        <li><strong><span lang="pt">Especialista (Skill Monkey):</span><span lang="en">Skill Expert:</span><span lang="es">Especialista en Habilidades:</span></strong>
+                            <span lang="pt"> Muitas proficiências, desarmar armadilhas e abrir fechaduras.</span><span lang="en"> Many proficiencies, disarming traps, and picking locks.</span><span lang="es"> Muchas proficiencias, desactivar trampas y abrir cerraduras.</span></li>
+                    </ul>
+                </section>
+                <section>
+                    <h3><img src="https://api.iconify.design/game-icons/crossed-swords.svg" alt="icon"><span lang="pt">Guia de Armas</span><span lang="en">Weapons Guide</span><span lang="es">Guía de Armas</span></h3>
+                    <ul>
+                        <li><strong><span lang="pt">Rapieira:</span><span lang="en">Rapier:</span><span lang="es">Estoque:</span></strong>
+                            <span lang="pt"> A arma corpo a corpo de Acuidade com o maior dano base (1d8).</span><span lang="en"> The Finesse melee weapon with the highest base damage (1d8).</span><span lang="es"> El arma cuerpo a cuerpo de Sutileza con el mayor daño base (1d8).</span></li>
+                        <li><strong><span lang="pt">Arco Curto / Besta:</span><span lang="en">Shortbow / Crossbow:</span><span lang="es">Arco Corto / Ballesta:</span></strong>
+                            <span lang="pt"> Permite aplicar o Ataque Furtivo de forma segura a uma distância.</span><span lang="en"> Allows applying Sneak Attack safely from a distance.</span><span lang="es"> Permite aplicar el Ataque Furtivo de forma segura a distancia.</span></li>
+                        <li><strong><span lang="pt">Adagas:</span><span lang="en">Daggers:</span><span lang="es">Dagas:</span></strong>
+                            <span lang="pt"> Versáteis, podem ser usadas corpo a corpo ou arremessadas.</span><span lang="en"> Versatile, can be used in melee or thrown.</span><span lang="es"> Versátiles, se pueden usar cuerpo a cuerpo o arrojadizas.</span></li>
+                    </ul>
+                </section>
+            </div>
+            <div>
+                <section>
+                    <h3><img src="https://api.iconify.design/game-icons/hood.svg" alt="icon"><span lang="pt">Características Base</span><span lang="en">Key Features</span><span lang="es">Características Clave</span></h3>
+                    <ul class="features-list">
+                        <li class="feature-item">
+                            <div class="feature-title"><span lang="pt">Ataque Furtivo (Nv 1)</span><span lang="en">Sneak Attack (Lvl 1)</span><span lang="es">Ataque Furtivo (Nv 1)</span></div>
+                            <div><span lang="pt">1/turno. Cause dano extra usando arma de Acuidade/À Distância se tiver vantagem ou aliado próximo.</span><span lang="en">1/turn. Deal extra damage with Finesse/Ranged weapon if you have Advantage or nearby ally.</span><span lang="es">1/turno. Causa daño extra con arma de Sutileza/A Distancia si tienes Ventaja o aliado cerca.</span></div>
+                        </li>
+                        <li class="feature-item">
+                            <div class="feature-title"><span lang="pt">Ação Astuta (Nv 2)</span><span lang="en">Cunning Action (Lvl 2)</span><span lang="es">Acción Astuta (Nv 2)</span></div>
+                            <div><span lang="pt">Ação Bônus para usar Disparada, Desengajar ou Esconder-se em todos os turnos.</span><span lang="en">Bonus Action to Dash, Disengage, or Hide every turn.</span><span lang="es">Acción Adicional para Correr, Destrabarse o Esconderse en cada turno.</span></div>
+                        </li>
+                        <li class="feature-item">
+                            <div class="feature-title"><span lang="pt">Golpe Astuto (Nv 5)</span><span lang="en">Cunning Strike (Lvl 5)</span><span lang="es">Golpe Astuto (Nv 5)</span></div>
+                            <div><span lang="pt">Novo 2024! Sacrifique dados do Ataque Furtivo para causar debuffs: Envenenar, Derrubar, Afastar-se.</span><span lang="en">New 2024! Sacrifice Sneak Attack dice to inflict debuffs: Poison, Trip, Withdraw.</span><span lang="es">¡Nuevo 2024! Sacrifica dados de Ataque Furtivo para causar debuffs: Envenenar, Derribar, Retirarse.</span></div>
+                        </li>
+                    <li class="feature-item">
+                        <div class="feature-title"><span lang="pt">Evasão (Nv 7)</span><span lang="en">Evasion (Lvl 7)</span><span lang="es">Evasión (Nv 7)</span></div>
+                        <div><span lang="pt">Em efeitos de Destreza (como Bola de Fogo): recebe zero dano no sucesso, ou metade se falhar.</span><span lang="en">On Dexterity saves (like Fireball): take zero damage on success, or half damage if you fail.</span><span lang="es">En salvaciones de Destreza (como Bola de Fuego): recibe cero daño en éxito, o mitad si fallas.</span></div>
+                    </li>
+                    <li class="feature-item">
+                        <div class="feature-title"><span lang="pt">Talento Confiável (Nv 11)</span><span lang="en">Reliable Talent (Lvl 11)</span><span lang="es">Talento Confiable (Nv 11)</span></div>
+                        <div><span lang="pt">Qualquer teste de perícia com proficiência rola no mínimo 10 no dado (nunca falha miseravelmente).</span><span lang="en">Any skill check you are proficient in rolls at least a 10 on the d20 (no more miserable fails).</span><span lang="es">Cualquier prueba de habilidad con proficiencia tira al menos un 10 en el d20 (nunca fallas miserablemente).</span></div>
+                    </li>
+                    <li class="feature-item">
+                        <div class="feature-title"><span lang="pt">Golpe de Sorte (Nv 20)</span><span lang="en">Stroke of Luck (Lvl 20)</span><span lang="es">Golpe de Suerte (Nv 20)</span></div>
+                        <div><span lang="pt">1x por Descanso Curto, transforme um ataque ou teste de perícia falho em um Acerto Crítico ou sucesso.</span><span lang="en">1/Short Rest, turn a missed attack or failed ability check into a Critical Hit or success.</span><span lang="es">1x por Descanso Corto, transforma un ataque o prueba fallida en un Golpe Crítico o éxito.</span></div>
+                    </li>
+                    </ul>
+                </section>
+            </div>
+        </div>
+    </div>
+    <script>
+        function setLanguage(lang, element) {
+            document.body.className = 'lang-' + lang;
+            const buttons = document.querySelectorAll('.lang-btn');
+            buttons.forEach(btn => btn.classList.remove('active'));
+            element.classList.add('active');
+        }
+    </script>
+</body>
+</html>

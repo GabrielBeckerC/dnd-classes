@@ -1,0 +1,100 @@
+<!DOCTYPE html>
+<html lang="pt">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Wizard Quick Reference Card (5.5E)</title>
+    <link rel="stylesheet" href="../style.css">
+    <style>
+        :root { --bg-color: #f5f6fc; --text-color: #2c2c2c; --accent-color: #3f51b5; --accent-dark: #283593; --border-color: #d0d4e8; --card-bg: #ffffff; }
+        .container::before { background-image: url('../img/mago.jpg'); }
+    </style>
+</head>
+<body class="lang-pt">
+    <div class="container">
+        <div class="top-bar">
+            <a href="../index.html" class="back-btn"><span lang="pt">&larr; Menu de Classes</span><span lang="en">&larr; Class Menu</span><span lang="es">&larr; Menú de Clases</span></a>
+            <div class="lang-selector">
+                <button class="lang-btn active" onclick="setLanguage('pt', this)">PT</button><button class="lang-btn" onclick="setLanguage('en', this)">EN</button><button class="lang-btn" onclick="setLanguage('es', this)">ES</button>
+            </div>
+        </div>
+        <header>
+            <h1>Wizard</h1>
+            <h2><span lang="pt">Cartão de Referência (5.5E)</span><span lang="en">Quick Reference Card (5.5E)</span><span lang="es">Tarjeta de Referencia (5.5E)</span></h2>
+        </header>
+        <div class="grid">
+            <div>
+                <section>
+                    <h3><img src="https://api.iconify.design/game-icons/scroll-unfurled.svg" alt="icon"><span lang="pt">Visão Geral</span><span lang="en">Class Overview</span><span lang="es">Descripción General</span></h3>
+                    <table class="overview-table">
+                        <tr><td><span lang="pt">Dado de Vida</span><span lang="en">Hit Die</span><span lang="es">Dado de Golpe</span></td><td>d6</td></tr>
+                        <tr><td><span lang="pt">Atributo</span><span lang="en">Primary</span><span lang="es">Atributo</span></td><td><span lang="pt">Inteligência</span><span lang="en">Intelligence</span><span lang="es">Inteligencia</span></td></tr>
+                        <tr><td><span lang="pt">Armaduras</span><span lang="en">Armor</span><span lang="es">Armaduras</span></td><td><span lang="pt">Nenhuma</span><span lang="en">None</span><span lang="es">Ninguna</span></td></tr>
+                        <tr><td><span lang="pt">Armas</span><span lang="en">Weapons</span><span lang="es">Armas</span></td><td><span lang="pt">Armas Simples</span><span lang="en">Simple Weapons</span><span lang="es">Armas Simples</span></td></tr>
+                        <tr><td><span lang="pt">Testes (Saves)</span><span lang="en">Saves</span><span lang="es">Salvaciones</span></td><td><span lang="pt">Inteligência, Sabedoria</span><span lang="en">Intelligence, Wisdom</span><span lang="es">Inteligencia, Sabiduría</span></td></tr>
+                    </table>
+                </section>
+                <section>
+                    <h3><img src="https://api.iconify.design/game-icons/shield.svg" alt="icon"><span lang="pt">Papel no Grupo</span><span lang="en">Role in the Party</span><span lang="es">Rol en el Grupo</span></h3>
+                    <ul>
+                        <li><strong><span lang="pt">Solucionador / Utilidade:</span><span lang="en">Problem Solver / Utility:</span><span lang="es">Solucionador / Utilidad:</span></strong>
+                            <span lang="pt"> Magias de rituais e a maior lista de magias para qualquer situação.</span><span lang="en"> Ritual spells and the largest spell list for any situation.</span><span lang="es"> Conjuros rituales y la mayor lista de conjuros para cualquier situación.</span></li>
+                        <li><strong><span lang="pt">Controlador de Multidões:</span><span lang="en">Crowd Controller:</span><span lang="es">Controlador de Masas:</span></strong>
+                            <span lang="pt"> Reduz inimigos com efeitos em área ou feitiços de encantamento.</span><span lang="en"> Shuts down enemies with Area of Effect or enchantment spells.</span><span lang="es"> Reduce enemigos con efectos de área o conjuros de encantamiento.</span></li>
+                    </ul>
+                </section>
+                <section>
+                    <h3><img src="https://api.iconify.design/game-icons/crossed-swords.svg" alt="icon"><span lang="pt">Guia de Armas</span><span lang="en">Weapons Guide</span><span lang="es">Guía de Armas</span></h3>
+                    <ul>
+                        <li><strong><span lang="pt">Truques (Magias):</span><span lang="en">Cantrips (Spells):</span><span lang="es">Trucos (Conjuros):</span></strong>
+                            <span lang="pt"> Raio de Fogo / Toque da Morte. Seu dano constante sem gastar espaços.</span><span lang="en"> Fire Bolt / Toll the Dead. Your constant damage without using slots.</span><span lang="es"> Descarga de Fuego / Toque de la Muerte. Tu daño constante sin gastar espacios.</span></li>
+                        <li><strong><span lang="pt">Bordão:</span><span lang="en">Quarterstaff:</span><span lang="es">Bastón:</span></strong>
+                            <span lang="pt"> Frequentemente mantido apenas como Foco Arcano para conjurar.</span><span lang="en"> Often held purely as an Arcane Focus for casting spells.</span><span lang="es"> Frecuentemente sostenido solo como Foco Arcano para conjurar.</span></li>
+                        <li><strong><span lang="pt">Besta Leve:</span><span lang="en">Light Crossbow:</span><span lang="es">Ballesta Ligera:</span></strong>
+                            <span lang="pt"> Quebra-galho nos níveis 1 a 3 caso seus truques não acertem.</span><span lang="en"> A fallback at levels 1 to 3 in case your cantrips fail to hit.</span><span lang="es"> Un respaldo en los niveles 1 al 3 en caso de que tus trucos fallen.</span></li>
+                    </ul>
+                </section>
+            </div>
+            <div>
+                <section>
+                    <h3><img src="https://api.iconify.design/game-icons/wizard-staff.svg" alt="icon"><span lang="pt">Características Base</span><span lang="en">Key Features</span><span lang="es">Características Clave</span></h3>
+                    <ul class="features-list">
+                        <li class="feature-item">
+                            <div class="feature-title"><span lang="pt">Recuperação Arcana (Nv 1)</span><span lang="en">Arcane Recovery (Lvl 1)</span><span lang="es">Recuperación Arcana (Nv 1)</span></div>
+                            <div><span lang="pt">Recupere espaços de magia durante um Descanso Curto (níveis combinados iguais a metade do seu Nível).</span><span lang="en">Recover spell slots on a Short Rest (combined levels equal to half your Wizard level).</span><span lang="es">Recupera espacios en un Descanso Corto (niveles combinados igual a la mitad de tu Nivel).</span></div>
+                        </li>
+                        <li class="feature-item">
+                            <div class="feature-title"><span lang="pt">Erudito (Nv 2)</span><span lang="en">Scholar (Lvl 2)</span><span lang="es">Erudito (Nv 2)</span></div>
+                            <div><span lang="pt">Ganha Especialização em uma de suas perícias baseadas em Inteligência (ex: Arcanismo).</span><span lang="en">Gain Expertise in one of your Intelligence-based skills (e.g., Arcana).</span><span lang="es">Gana Pericia en una de tus habilidades basadas en Inteligencia (ej: Arcano).</span></div>
+                        </li>
+                        <li class="feature-item">
+                            <div class="feature-title"><span lang="pt">Memorizar Magia (Nv 5)</span><span lang="en">Memorize Spell (Lvl 5)</span><span lang="es">Memorizar Conjuro (Nv 5)</span></div>
+                            <div><span lang="pt">Novo! Troque uma magia preparada do seu grimório por outra durante um Descanso Curto.</span><span lang="en">New! Swap one prepared spell from your spellbook with another during a Short Rest.</span><span lang="es">¡Nuevo! Cambia un conjuro preparado de tu libro por otro durante un Descanso Corto.</span></div>
+                        </li>
+                    <li class="feature-item">
+                        <div class="feature-title"><span lang="pt">Mestre do Grimório (Nv 11+)</span><span lang="en">Spellbook Master (Lvl 11+)</span><span lang="es">Maestro del Libro (Nv 11+)</span></div>
+                        <div><span lang="pt">O Mago acessa magias que mudam o mundo (Teletransporte, Clone, Desejo) expandindo o Grimório.</span><span lang="en">Wizards access world-altering spells (Teleport, Clone, Wish) expanding their Spellbook endlessly.</span><span lang="es">El Mago accede a conjuros que cambian el mundo (Teletransporte, Clon, Deseo) expandiendo su Libro.</span></div>
+                    </li>
+                    <li class="feature-item">
+                        <div class="feature-title"><span lang="pt">Maestria em Magias (Nv 18)</span><span lang="en">Spell Mastery (Lvl 18)</span><span lang="es">Maestría en Conjuros (Nv 18)</span></div>
+                        <div><span lang="pt">Escolha uma magia de 1º e uma de 2º nível; pode lançá-las infinitamente sem gastar espaços!</span><span lang="en">Choose a 1st and 2nd level spell; cast them infinitely without expending spell slots!</span><span lang="es">Elige un conjuro de 1º y uno de 2º nivel; ¡puedes lanzarlos infinitamente sin gastar espacios!</span></div>
+                    </li>
+                    <li class="feature-item">
+                        <div class="feature-title"><span lang="pt">Magias de Assinatura (Nv 20)</span><span lang="en">Signature Spells (Lvl 20)</span><span lang="es">Conjuros Personales (Nv 20)</span></div>
+                        <div><span lang="pt">Escolha duas magias de 3º nível; sempre preparadas e podem ser lançadas de graça 1x/descanso curto.</span><span lang="en">Choose two 3rd-level spells; always prepared and can be cast free 1/short rest.</span><span lang="es">Elige dos conjuros de 3º nivel; siempre preparados y pueden lanzarse gratis 1x/descanso corto.</span></div>
+                    </li>
+                    </ul>
+                </section>
+            </div>
+        </div>
+    </div>
+    <script>
+        function setLanguage(lang, element) {
+            document.body.className = 'lang-' + lang;
+            const buttons = document.querySelectorAll('.lang-btn');
+            buttons.forEach(btn => btn.classList.remove('active'));
+            element.classList.add('active');
+        }
+    </script>
+</body>
+</html>

@@ -1,0 +1,168 @@
+<!DOCTYPE html>
+<html lang="pt">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Fighter Quick Reference Card (5E)</title>
+    <link rel="stylesheet" href="../style.css">
+    <style>
+        :root { --bg-color: #fcf5f5; --text-color: #2c2c2c; --accent-color: #c93a3a; --accent-dark: #8b1c1c; --border-color: #e8d0d0; --card-bg: #ffffff; }
+        .container::before { background-image: url('../img/guerreiro.jpg'); }
+    </style>
+</head>
+<body class="lang-pt">
+    <div class="container">
+        <div class="top-bar">
+            <a href="../index.html" class="back-btn">
+                <span lang="pt">&larr; Menu de Classes</span>
+                <span lang="en">&larr; Class Menu</span>
+                <span lang="es">&larr; Menú de Clases</span>
+            </a>
+            <div class="lang-selector">
+                <button class="lang-btn active" onclick="setLanguage('pt', this)">PT</button>
+                <button class="lang-btn" onclick="setLanguage('en', this)">EN</button>
+                <button class="lang-btn" onclick="setLanguage('es', this)">ES</button>
+            </div>
+        </div>
+        <header>
+            <h1>Fighter</h1>
+            <h2>
+                <span lang="pt">Cartão de Referência Rápida (5.5E)</span>
+                <span lang="en">Quick Reference Card (5.5E)</span>
+                <span lang="es">Tarjeta de Referencia Rápida (5.5E)</span>
+            </h2>
+        </header>
+        <div class="grid">
+            <div>
+                <section>
+                    <h3><img src="https://api.iconify.design/game-icons/scroll-unfurled.svg" alt="icon">
+                        <span lang="pt">Visão Geral da Classe</span><span lang="en">Class Overview</span><span lang="es">Descripción General</span>
+                    </h3>
+                    <table class="overview-table">
+                        <tr><td><span lang="pt">Dado de Vida</span><span lang="en">Hit Die</span><span lang="es">Dado de Golpe</span></td><td>d10</td></tr>
+                        <tr><td><span lang="pt">Atributo Principal</span><span lang="en">Primary Ability</span><span lang="es">Atributo Principal</span></td>
+                            <td><span lang="pt">Força ou Destreza</span><span lang="en">Strength or Dexterity</span><span lang="es">Fuerza o Destreza</span></td></tr>
+                        <tr><td><span lang="pt">Proficiência em Armaduras</span><span lang="en">Armor Proficiencies</span><span lang="es">Proficiencia en Armaduras</span></td>
+                            <td><span lang="pt">Todas, Escudos</span><span lang="en">All armor, Shields</span><span lang="es">Todas las armaduras, Escudos</span></td></tr>
+                        <tr><td><span lang="pt">Proficiência em Armas</span><span lang="en">Weapon Proficiencies</span><span lang="es">Proficiencia en Armas</span></td>
+                            <td><span lang="pt">Armas simples e marciais</span><span lang="en">Simple and martial weapons</span><span lang="es">Armas simples y marciales</span></td></tr>
+                        <tr><td><span lang="pt">Testes de Resistência</span><span lang="en">Saving Throws</span><span lang="es">Salvaciones</span></td>
+                            <td><span lang="pt">Força, Constituição</span><span lang="en">Strength, Constitution</span><span lang="es">Fuerza, Constitución</span></td></tr>
+                    </table>
+                </section>
+                <section>
+                    <h3><img src="https://api.iconify.design/game-icons/shield.svg" alt="icon">
+                        <span lang="pt">Papel no Grupo</span><span lang="en">Role in the Party</span><span lang="es">Rol en el Grupo</span>
+                    </h3>
+                    <ul>
+                        <li><strong><span lang="pt">Tanque/Defensor:</span><span lang="en">Tank/Defender:</span><span lang="es">Tanque/Defensor:</span></strong>
+                            <span lang="pt"> Altíssimo HP e acesso às armaduras mais pesadas do jogo.</span><span lang="en"> Massive HP and access to the heaviest armor in the game.</span><span lang="es"> Altísimo HP y acceso a las armaduras más pesadas del juego.</span></li>
+                        <li><strong><span lang="pt">Dano Consistente:</span><span lang="en">Consistent Damage:</span><span lang="es">Daño Consistente:</span></strong>
+                            <span lang="pt"> Com múltiplos ataques e Maestria de Armas, a punição nunca para.</span><span lang="en"> With multiple attacks and Weapon Mastery, the punishment never stops.</span><span lang="es"> Con múltiples ataques y Maestría de Armas, el castigo nunca se detiene.</span></li>
+                    </ul>
+                </section>
+                <section>
+                    <h3><img src="https://api.iconify.design/game-icons/sword-clash.svg" alt="icon">
+                        <span lang="pt">Maestria em Armas (Novo 2024!)</span><span lang="en">Weapon Mastery (New 2024!)</span><span lang="es">Maestría en Armas (¡Nuevo 2024!)</span>
+                    </h3>
+                    <p style="margin-bottom: 10px; font-size: 0.95rem;">
+                        <span lang="pt">No Nível 1, você escolhe <strong>3 tipos de armas</strong>. Ao usar essas armas, você desbloqueia e aplica automaticamente a Propriedade de Maestria delas (como Fendar, Derrubar, Empurrar, Pastar, etc).</span>
+                        <span lang="en">At Level 1, you choose <strong>3 kinds of weapons</strong>. When using these weapons, you unlock and can automatically apply their Mastery Property (like Cleave, Topple, Push, Graze, etc).</span>
+                        <span lang="es">En el Nivel 1, eliges <strong>3 tipos de armas</strong>. Al usar estas armas, desbloqueas y puedes aplicar automáticamente su Propiedad de Maestría (como Hender, Derribar, Empujar, Rozar, etc).</span>
+                    </p>
+                    <p style="font-size: 0.95rem;">
+                        <span lang="pt"><em>Você pode alterar as armas escolhidas no final de um Descanso Longo.</em></span>
+                        <span lang="en"><em>You can change your chosen weapons at the end of a Long Rest.</em></span>
+                        <span lang="es"><em>Puedes cambiar las armas elegidas al final de un Descanso Largo.</em></span>
+                    </p>
+                </section>
+            </div>
+            <div>
+                <section>
+                    <h3><img src="https://api.iconify.design/game-icons/crossed-swords.svg" alt="icon">
+                        <span lang="pt">Principais Características</span><span lang="en">Key Class Features</span><span lang="es">Características Clave</span>
+                    </h3>
+                    <ul class="features-list">
+                        <li class="feature-item">
+                            <div class="feature-title"><span lang="pt">Estilo de Luta (Nível 1)</span><span lang="en">Fighting Style (Lvl 1)</span><span lang="es">Estilo de Lucha (Nivel 1)</span></div>
+                            <div>
+                                <span lang="pt">Você ganha um talento de Estilo de Luta sem pré-requisitos (ex: Arquearia, Defesa, Combate com Duas Armas).</span>
+                                <span lang="en">You gain a Fighting Style feat ignoring prerequisites (e.g., Archery, Defense, Two-Weapon Fighting).</span>
+                                <span lang="es">Ganas una dote de Estilo de Lucha sin prerrequisitos (ej: Tiro con Arco, Defensa, Lucha con Dos Armas).</span>
+                            </div>
+                        </li>
+                        <li class="feature-item">
+                            <div class="feature-title"><span lang="pt">Retomar o Fôlego (Nível 1+)</span><span lang="en">Second Wind (Lvl 1+)</span><span lang="es">Tomar Aliento (Nivel 1+)</span></div>
+                            <ul class="sub-list">
+                                <li><span lang="pt"><strong>Ação Bônus:</strong> Cura 1d10 + Nível de Guerreiro (Inicia com 2 usos).</span><span lang="en"><strong>Bonus Action:</strong> Heals 1d10 + Fighter Level (Starts at 2 uses).</span><span lang="es"><strong>Acción Adicional:</strong> Cura 1d10 + Nivel de Guerrero (Inicia con 2 usos).</span></li>
+                                <li><span lang="pt"><strong>Mente Tática (Nv 2):</strong> Gaste 1 uso para rolar 1d10 e adicionar a um Teste de Perícia que você falhou. Se ainda falhar, o uso não é gasto!</span><span lang="en"><strong>Tactical Mind (Lvl 2):</strong> Spend 1 use to roll 1d10 and add to a failed Skill Check. If you still fail, the use isn't consumed!</span><span lang="es"><strong>Mente Táctica (Nv 2):</strong> Gasta 1 uso para tirar 1d10 y sumarlo a una Prueba de Habilidad fallida. ¡Si aún fallas, el uso no se gasta!</span></li>
+                            </ul>
+                        </li>
+                        <li class="feature-item">
+                            <div class="feature-title"><span lang="pt">Surto de Ação (Nível 2)</span><span lang="en">Action Surge (Lvl 2)</span><span lang="es">Acción Súbita (Nivel 2)</span></div>
+                            <div>
+                                <span lang="pt">1 vez por Descanso (Curto/Longo). Ganhe uma Ação extra no seu turno (não pode ser usada para lançar Magias).</span>
+                                <span lang="en">1/Rest (Short/Long). Gain one additional Action on your turn (cannot be used for the Magic action).</span>
+                                <span lang="es">1 vez por Descanso (Corto/Largo). Gana una Acción extra en tu turno (no puede usarse para la acción Mágica).</span>
+                            </div>
+                        </li>
+                        <li class="feature-item">
+                            <div class="feature-title"><span lang="pt">Ataque Extra (Nível 5+)</span><span lang="en">Extra Attack (Lvl 5+)</span><span lang="es">Ataque Extra (Nivel 5+)</span></div>
+                            <div>
+                                <span lang="pt">Ataque duas vezes ao realizar a Ação de Ataque. (Sobe para 3 ataques no Nv 11, e 4 no Nv 20).</span>
+                                <span lang="en">Attack twice when taking the Attack action. (Scales to 3 attacks at Lvl 11, and 4 at Lvl 20).</span>
+                                <span lang="es">Ataca dos veces al realizar la Acción de Ataque. (Sube a 3 ataques en el Nv 11, y 4 en el Nv 20).</span>
+                            </div>
+                        </li>
+                        <li class="feature-item">
+                            <div class="feature-title"><span lang="pt">Indomável (Nível 9+)</span><span lang="en">Indomitable (Lvl 9+)</span><span lang="es">Indomable (Nivel 9+)</span></div>
+                            <div>
+                                <span lang="pt">Se falhar num Teste de Resistência, rode de novo adicionando seu Nível de Guerreiro ao resultado. (1/Descanso Longo).</span>
+                                <span lang="en">If you fail a Saving Throw, reroll it adding your Fighter level to the new roll. (1/Long Rest).</span>
+                                <span lang="es">Si fallas una Salvación, tira de nuevo añadiendo tu Nivel de Guerrero al resultado. (1/Descanso Largo).</span>
+                            </div>
+                        </li>
+                    <li class="feature-item">
+                        <div class="feature-title"><span lang="pt">Deslocamento Tático (Nível 9)</span><span lang="en">Tactical Shift (Lvl 9)</span><span lang="es">Desplazamiento Táctico (Nivel 9)</span></div>
+                        <div>
+                            <span lang="pt">Ao usar Retomar o Fôlego, você pode se mover até metade do seu deslocamento sem provocar Ataques de Oportunidade.</span>
+                            <span lang="en">When you use Second Wind, you can move up to half your speed without provoking Opportunity Attacks.</span>
+                            <span lang="es">Al usar Tomar Aliento, puedes moverte hasta la mitad de tu velocidad sin provocar Ataques de Oportunidad.</span>
+                        </div>
+                    </li>
+                    <li class="feature-item">
+                        <div class="feature-title"><span lang="pt">Ataques Estudados (Nível 13)</span><span lang="en">Studied Attacks (Lvl 13)</span><span lang="es">Ataques Estudiados (Nivel 13)</span></div>
+                        <div>
+                            <span lang="pt">Se você errar um ataque contra uma criatura, tem Vantagem no próximo ataque contra ela até o fim do seu próximo turno.</span>
+                            <span lang="en">If you miss an attack against a creature, you have Advantage on your next attack against it until the end of your next turn.</span>
+                            <span lang="es">Si fallas un ataque contra una criatura, tienes Ventaja en tu próximo ataque contra ella hasta el final de tu próximo turno.</span>
+                        </div>
+                    </li>
+                    <li class="feature-item">
+                        <div class="feature-title"><span lang="pt">Evolução Final (Níveis 17-20)</span><span lang="en">Final Evolution (Lvls 17-20)</span><span lang="es">Evolución Final (Niveles 17-20)</span></div>
+                        <div>
+                            <span lang="pt">Nv 17: Ganha um segundo uso de Surto de Ação e 3º uso de Indomável. Nv 20: Ataque Extra chega a incríveis 4 ataques por Ação.</span>
+                            <span lang="en">Lvl 17: Gain a second Action Surge and 3rd Indomitable use. Lvl 20: Extra Attack reaches 4 attacks per Action.</span>
+                            <span lang="es">Nv 17: Gana un segundo uso de Acción Súbita y 3.er uso de Indomable. Nv 20: Ataque Extra alcanza 4 ataques por Acción.</span>
+                        </div>
+                    </li>
+                    </ul>
+                </section>
+            </div>
+        </div>
+        <footer>
+            <span lang="pt">Este projeto é um Conteúdo de Fã não oficial.</span>
+            <span lang="en">This project is unofficial Fan Content.</span>
+            <span lang="es">Este proyecto es Contenido de Fans no oficial.</span>
+        </footer>
+    </div>
+    <script>
+        function setLanguage(lang, element) {
+            document.body.className = 'lang-' + lang;
+            const buttons = document.querySelectorAll('.lang-btn');
+            buttons.forEach(btn => btn.classList.remove('active'));
+            element.classList.add('active');
+        }
+    </script>
+</body>
+</html>

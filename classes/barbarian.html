@@ -1,0 +1,100 @@
+<!DOCTYPE html>
+<html lang="pt">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Barbarian Quick Reference Card (5.5E)</title>
+    <link rel="stylesheet" href="../style.css">
+    <style>
+        :root { --bg-color: #fcf7f5; --text-color: #2c2c2c; --accent-color: #ff9800; --accent-dark: #e65100; --border-color: #e8dcd0; --card-bg: #ffffff; }
+        .container::before { background-image: url('../img/barbaro.jpg'); }
+    </style>
+</head>
+<body class="lang-pt">
+    <div class="container">
+        <div class="top-bar">
+            <a href="../index.html" class="back-btn"><span lang="pt">&larr; Menu de Classes</span><span lang="en">&larr; Class Menu</span><span lang="es">&larr; Menú de Clases</span></a>
+            <div class="lang-selector">
+                <button class="lang-btn active" onclick="setLanguage('pt', this)">PT</button><button class="lang-btn" onclick="setLanguage('en', this)">EN</button><button class="lang-btn" onclick="setLanguage('es', this)">ES</button>
+            </div>
+        </div>
+        <header>
+            <h1>Barbarian</h1>
+            <h2><span lang="pt">Cartão de Referência (5.5E)</span><span lang="en">Quick Reference Card (5.5E)</span><span lang="es">Tarjeta de Referencia (5.5E)</span></h2>
+        </header>
+        <div class="grid">
+            <div>
+                <section>
+                    <h3><img src="https://api.iconify.design/game-icons/scroll-unfurled.svg" alt="icon"><span lang="pt">Visão Geral</span><span lang="en">Class Overview</span><span lang="es">Descripción General</span></h3>
+                    <table class="overview-table">
+                        <tr><td><span lang="pt">Dado de Vida</span><span lang="en">Hit Die</span><span lang="es">Dado de Golpe</span></td><td>d12</td></tr>
+                        <tr><td><span lang="pt">Atributo</span><span lang="en">Primary</span><span lang="es">Atributo</span></td><td><span lang="pt">Força</span><span lang="en">Strength</span><span lang="es">Fuerza</span></td></tr>
+                        <tr><td><span lang="pt">Armaduras</span><span lang="en">Armor</span><span lang="es">Armaduras</span></td><td><span lang="pt">Leves, Médias, Escudos</span><span lang="en">Light, Medium, Shields</span><span lang="es">Ligeras, Medias, Escudos</span></td></tr>
+                        <tr><td><span lang="pt">Armas</span><span lang="en">Weapons</span><span lang="es">Armas</span></td><td><span lang="pt">Simples e Marciais</span><span lang="en">Simple and Martial</span><span lang="es">Simples y Marciales</span></td></tr>
+                        <tr><td><span lang="pt">Testes (Saves)</span><span lang="en">Saves</span><span lang="es">Salvaciones</span></td><td><span lang="pt">Força, Constituição</span><span lang="en">Strength, Constitution</span><span lang="es">Fuerza, Constitución</span></td></tr>
+                    </table>
+                </section>
+                <section>
+                    <h3><img src="https://api.iconify.design/game-icons/shield.svg" alt="icon"><span lang="pt">Papel no Grupo</span><span lang="en">Role in the Party</span><span lang="es">Rol en el Grupo</span></h3>
+                    <ul>
+                        <li><strong><span lang="pt">Tanque/Defensor:</span><span lang="en">Tank/Defender:</span><span lang="es">Tanque/Defensor:</span></strong>
+                            <span lang="pt"> Pontos de Vida massivos e Resistência a dano através da Fúria.</span><span lang="en"> Massive Hit Points and damage Resistance through Rage.</span><span lang="es"> Puntos de Vida masivos y Resistencia al daño a través de la Furia.</span></li>
+                        <li><strong><span lang="pt">Atacante Corpo a Corpo:</span><span lang="en">Melee Striker:</span><span lang="es">Atacante Cuerpo a Cuerpo:</span></strong>
+                            <span lang="pt"> Dano alto de perto, garantido pelo Ataque Temerário.</span><span lang="en"> High close-quarters damage, guaranteed by Reckless Attack.</span><span lang="es"> Alto daño cuerpo a cuerpo, garantizado por el Ataque Temerario.</span></li>
+                    </ul>
+                </section>
+                <section>
+                    <h3><img src="https://api.iconify.design/game-icons/crossed-swords.svg" alt="icon"><span lang="pt">Guia de Armas</span><span lang="en">Weapons Guide</span><span lang="es">Guía de Armas</span></h3>
+                    <ul>
+                        <li><strong><span lang="pt">Armas Pesadas:</span><span lang="en">Heavy Weapons:</span><span lang="es">Armas Pesadas:</span></strong>
+                            <span lang="pt"> Espada Grande ou Machado Grande. Excelente para golpes brutais.</span><span lang="en"> Greatsword or Greataxe. Excellent for brutal strikes.</span><span lang="es"> Espadón o Gran Hacha. Excelente para golpes brutales.</span></li>
+                        <li><strong><span lang="pt">Arma e Escudo:</span><span lang="en">Weapon & Shield:</span><span lang="es">Arma y Escudo:</span></strong>
+                            <span lang="pt"> Machado de Batalha com escudo para máxima sobrevivência.</span><span lang="en"> Battleaxe with a shield for maximum survivability.</span><span lang="es"> Hacha de Batalla con escudo para máxima supervivencia.</span></li>
+                        <li><strong><span lang="pt">Armas de Arremesso:</span><span lang="en">Thrown Weapons:</span><span lang="es">Armas Arrojadizas:</span></strong>
+                            <span lang="pt"> Azagaias/Machadinhas para combate à distância usando Força.</span><span lang="en"> Javelins/Handaxes for ranged combat using Strength.</span><span lang="es"> Jabalinas/Hachas de mano para combate a distancia usando Fuerza.</span></li>
+                    </ul>
+                </section>
+            </div>
+            <div>
+                <section>
+                    <h3><img src="https://api.iconify.design/game-icons/barbute.svg" alt="icon"><span lang="pt">Características Base</span><span lang="en">Key Features</span><span lang="es">Características Clave</span></h3>
+                    <ul class="features-list">
+                        <li class="feature-item">
+                            <div class="feature-title"><span lang="pt">Fúria (Nv 1)</span><span lang="en">Rage (Lvl 1)</span><span lang="es">Furia (Nv 1)</span></div>
+                            <div><span lang="pt">Ação Bônus. Vantagem em Força, +Dano, resistência a Corte/Perfuração/Concussão. Pode manter a fúria atacando ou sendo ferido.</span><span lang="en">Bonus Action. Adv on STR, +Damage, resistance to Bludgeoning/Piercing/Slashing. Maintained by attacking or taking damage.</span><span lang="es">Acción Adicional. Ventaja en FUE, +Daño, resistencia a Corte/Perforación/Contundente. Se mantiene atacando o recibiendo daño.</span></div>
+                        </li>
+                        <li class="feature-item">
+                            <div class="feature-title"><span lang="pt">Defesa Sem Armadura (Nv 1)</span><span lang="en">Unarmored Defense (Lvl 1)</span><span lang="es">Defensa sin Armadura (Nv 1)</span></div>
+                            <div><span lang="pt">Sua CA = 10 + mod DES + mod CON. Pode usar escudo.</span><span lang="en">Your AC = 10 + DEX mod + CON mod. Can use a shield.</span><span lang="es">Tu CA = 10 + mod DES + mod CON. Puedes usar escudo.</span></div>
+                        </li>
+                        <li class="feature-item">
+                            <div class="feature-title"><span lang="pt">Ataque Temerário (Nv 2)</span><span lang="en">Reckless Attack (Lvl 2)</span><span lang="es">Ataque Temerario (Nv 2)</span></div>
+                            <div><span lang="pt">Vantagem nos seus ataques de Força no turno, mas inimigos ganham vantagem contra você.</span><span lang="en">Advantage on STR attacks this turn, but enemies gain advantage against you.</span><span lang="es">Ventaja en ataques de FUE este turno, pero los enemigos ganan ventaja contra ti.</span></div>
+                        </li>
+                    <li class="feature-item">
+                        <div class="feature-title"><span lang="pt">Ataque Extra (Nv 5)</span><span lang="en">Extra Attack (Lvl 5)</span><span lang="es">Ataque Extra (Nv 5)</span></div>
+                        <div><span lang="pt">Ataque duas vezes ao invés de uma, e ganhe +3m de deslocamento.</span><span lang="en">Attack twice instead of once, and gain +10ft speed.</span><span lang="es">Ataca dos veces en lugar de una, y gana +3m de velocidad.</span></div>
+                    </li>
+                    <li class="feature-item">
+                        <div class="feature-title"><span lang="pt">Golpe Brutal (Nv 9)</span><span lang="en">Brutal Strike (Lvl 9)</span><span lang="es">Golpe Brutal (Nv 9)</span></div>
+                        <div><span lang="pt">Novo! Troque a Vantagem do Ataque Temerário por +1d10 de dano e efeitos.</span><span lang="en">New! Forgo Reckless Attack advantage for +1d10 damage and effects.</span><span lang="es">¡Nuevo! Cambia la Ventaja de Ataque Temerario por +1d10 de daño y efectos.</span></div>
+                    </li>
+                    <li class="feature-item">
+                        <div class="feature-title"><span lang="pt">Evolução Final (Níveis 11-20)</span><span lang="en">Final Evolution (Lvls 11-20)</span><span lang="es">Evolución Final (Niveles 11-20)</span></div>
+                        <div><span lang="pt">Nv 11: Fúria Implacável. Nv 15: Fúria Persistente (restaura usos). Nv 20: Campeão Primal (+4 FOR e CON, máximo 24).</span><span lang="en">Lvl 11: Relentless Rage. Lvl 15: Persistent Rage (restores uses). Lvl 20: Primal Champion (+4 STR & CON, max 24).</span><span lang="es">Nv 11: Furia Implacable. Nv 15: Furia Persistente (restaura usos). Nv 20: Campeón Primal (+4 FUE y CON, máximo 24).</span></div>
+                    </li>
+                    </ul>
+                </section>
+            </div>
+        </div>
+    </div>
+    <script>
+        function setLanguage(lang, element) {
+            document.body.className = 'lang-' + lang;
+            const buttons = document.querySelectorAll('.lang-btn');
+            buttons.forEach(btn => btn.classList.remove('active'));
+            element.classList.add('active');
+        }
+    </script>
+</body>
+</html>

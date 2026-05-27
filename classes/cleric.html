@@ -1,0 +1,100 @@
+<!DOCTYPE html>
+<html lang="pt">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Cleric Quick Reference Card (5.5E)</title>
+    <link rel="stylesheet" href="../style.css">
+    <style>
+        :root { --bg-color: #f5f9fc; --text-color: #2c2c2c; --accent-color: #03a9f4; --accent-dark: #0277bd; --border-color: #d0e0e8; --card-bg: #ffffff; }
+        .container::before { background-image: url('../img/clerigo.jpg'); }
+    </style>
+</head>
+<body class="lang-pt">
+    <div class="container">
+        <div class="top-bar">
+            <a href="../index.html" class="back-btn"><span lang="pt">&larr; Menu de Classes</span><span lang="en">&larr; Class Menu</span><span lang="es">&larr; Menú de Clases</span></a>
+            <div class="lang-selector">
+                <button class="lang-btn active" onclick="setLanguage('pt', this)">PT</button><button class="lang-btn" onclick="setLanguage('en', this)">EN</button><button class="lang-btn" onclick="setLanguage('es', this)">ES</button>
+            </div>
+        </div>
+        <header>
+            <h1>Cleric</h1>
+            <h2><span lang="pt">Cartão de Referência (5.5E)</span><span lang="en">Quick Reference Card (5.5E)</span><span lang="es">Tarjeta de Referencia (5.5E)</span></h2>
+        </header>
+        <div class="grid">
+            <div>
+                <section>
+                    <h3><img src="https://api.iconify.design/game-icons/scroll-unfurled.svg" alt="icon"><span lang="pt">Visão Geral</span><span lang="en">Class Overview</span><span lang="es">Descripción General</span></h3>
+                    <table class="overview-table">
+                        <tr><td><span lang="pt">Dado de Vida</span><span lang="en">Hit Die</span><span lang="es">Dado de Golpe</span></td><td>d8</td></tr>
+                        <tr><td><span lang="pt">Atributo</span><span lang="en">Primary</span><span lang="es">Atributo</span></td><td><span lang="pt">Sabedoria</span><span lang="en">Wisdom</span><span lang="es">Sabiduría</span></td></tr>
+                        <tr><td><span lang="pt">Armaduras</span><span lang="en">Armor</span><span lang="es">Armaduras</span></td><td><span lang="pt">Leves, Médias, Escudos</span><span lang="en">Light, Medium, Shields</span><span lang="es">Ligeras, Medias, Escudos</span></td></tr>
+                        <tr><td><span lang="pt">Armas</span><span lang="en">Weapons</span><span lang="es">Armas</span></td><td><span lang="pt">Armas Simples</span><span lang="en">Simple Weapons</span><span lang="es">Armas Simples</span></td></tr>
+                        <tr><td><span lang="pt">Testes (Saves)</span><span lang="en">Saves</span><span lang="es">Salvaciones</span></td><td><span lang="pt">Sabedoria, Carisma</span><span lang="en">Wisdom, Charisma</span><span lang="es">Sabiduría, Carisma</span></td></tr>
+                    </table>
+                </section>
+                <section>
+                    <h3><img src="https://api.iconify.design/game-icons/shield.svg" alt="icon"><span lang="pt">Papel no Grupo</span><span lang="en">Role in the Party</span><span lang="es">Rol en el Grupo</span></h3>
+                    <ul>
+                        <li><strong><span lang="pt">Curador Primário:</span><span lang="en">Primary Healer:</span><span lang="es">Curador Principal:</span></strong>
+                            <span lang="pt"> Acesso incomparável a magias de restauração e ressurreição.</span><span lang="en"> Unmatched access to restoration and resurrection spells.</span><span lang="es"> Acceso inigualable a conjuros de restauración y resurrección.</span></li>
+                        <li><strong><span lang="pt">Suporte Linha de Frente:</span><span lang="en">Frontline Support:</span><span lang="es">Soporte de Primera Línea:</span></strong>
+                            <span lang="pt"> Alta CA (Escudos/Armadura) permite curar e lutar no calor da batalha.</span><span lang="en"> High AC (Shields/Armor) allows healing and fighting in the thick of battle.</span><span lang="es"> Alta CA (Escudos/Armadura) permite curar y luchar en el fragor de la batalla.</span></li>
+                    </ul>
+                </section>
+                <section>
+                    <h3><img src="https://api.iconify.design/game-icons/crossed-swords.svg" alt="icon"><span lang="pt">Guia de Armas</span><span lang="en">Weapons Guide</span><span lang="es">Guía de Armas</span></h3>
+                    <ul>
+                        <li><strong><span lang="pt">Maça / Martelo:</span><span lang="en">Mace / Warhammer:</span><span lang="es">Maza / Martillo de Guerra:</span></strong>
+                            <span lang="pt"> Armas clássicas que combinam bem com a força do Clérigo.</span><span lang="en"> Classic weapons that pair well with the Cleric's strength.</span><span lang="es"> Armas clásicas que combinan bien con la fuerza del Clérigo.</span></li>
+                        <li><strong><span lang="pt">Escudo Sagrado:</span><span lang="en">Holy Shield:</span><span lang="es">Escudo Sagrado:</span></strong>
+                            <span lang="pt"> Quase obrigatório. Aumenta a defesa enquanto conjura magias.</span><span lang="en"> Almost mandatory. Boosts defense while casting spells.</span><span lang="es"> Casi obligatorio. Aumenta la defensa mientras lanza conjuros.</span></li>
+                        <li><strong><span lang="pt">Chama Sagrada (Truque):</span><span lang="en">Sacred Flame (Cantrip):</span><span lang="es">Llama Sagrada (Truco):</span></strong>
+                            <span lang="pt"> Principal ataque à distância que ignora cobertura.</span><span lang="en"> Main ranged attack that ignores cover.</span><span lang="es"> Principal ataque a distancia que ignora cobertura.</span></li>
+                    </ul>
+                </section>
+            </div>
+            <div>
+                <section>
+                    <h3><img src="https://api.iconify.design/game-icons/holy-symbol.svg" alt="icon"><span lang="pt">Características Base</span><span lang="en">Key Features</span><span lang="es">Características Clave</span></h3>
+                    <ul class="features-list">
+                        <li class="feature-item">
+                            <div class="feature-title"><span lang="pt">Ordem Divina (Nv 1)</span><span lang="en">Divine Order (Lvl 1)</span><span lang="es">Orden Divina (Nv 1)</span></div>
+                            <div><span lang="pt">Escolha Protetor (Armas Marciais + Armadura Pesada) ou Taumaturgo (+1 Truque, Religião/Arcana).</span><span lang="en">Choose Protector (Martial Weapons + Heavy Armor) or Thaumaturge (+1 Cantrip, Religion/Arcana).</span><span lang="es">Elige Protector (Armas Marciales + Armadura Pesada) o Taumaturgo (+1 Truco, Religión/Arcano).</span></div>
+                        </li>
+                        <li class="feature-item">
+                            <div class="feature-title"><span lang="pt">Canalizar Divindade (Nv 3)</span><span lang="en">Channel Divinity (Lvl 3)</span><span lang="es">Canalizar Divinidad (Nv 3)</span></div>
+                            <div><span lang="pt">Use poderes canalizados: Afastar Mortos-Vivos ou Centelha Divina (Curar um aliado ou causar dano).</span><span lang="en">Use channeled powers: Turn Undead or Divine Spark (Heal an ally or deal damage).</span><span lang="es">Usa poderes canalizados: Expulsar Muertos Vivientes o Chispa Divina (Cura a un aliado o causa daño).</span></div>
+                        </li>
+                        <li class="feature-item">
+                            <div class="feature-title"><span lang="pt">Subclasse (Nv 3)</span><span lang="en">Subclass (Lvl 3)</span><span lang="es">Subclase (Nv 3)</span></div>
+                            <div><span lang="pt">Nas novas regras de 2024, a escolha do seu Domínio Divino acontece no Nível 3!</span><span lang="en">In the 2024 rules, you choose your Divine Domain at Level 3!</span><span lang="es">¡En las reglas de 2024, la elección de tu Dominio Divino ocurre en el Nivel 3!</span></div>
+                        </li>
+                    <li class="feature-item">
+                        <div class="feature-title"><span lang="pt">Destruir Mortos-Vivos (Nv 5)</span><span lang="en">Destroy Undead (Lvl 5)</span><span lang="es">Destruir Muertos Vivientes (Nv 5)</span></div>
+                        <div><span lang="pt">Novo! Quando usa Afastar Mortos-Vivos, eles recebem Dano Radiante (rola d8s baseados no seu nível).</span><span lang="en">New! When you use Turn Undead, they take Radiant Damage (roll d8s based on your level).</span><span lang="es">¡Nuevo! Cuando usas Expulsar Muertos Vivientes, reciben Daño Radiante (tira d8s basados en tu nivel).</span></div>
+                    </li>
+                    <li class="feature-item">
+                        <div class="feature-title"><span lang="pt">Intervenção Divina (Nv 10)</span><span lang="en">Divine Intervention (Lvl 10)</span><span lang="es">Intervención Divina (Nv 10)</span></div>
+                        <div><span lang="pt">Reformulado! Escolha qualquer magia de Clérigo de 5º Nível ou menor. Você a lança de imediato sem custo.</span><span lang="en">Reworked! Choose any Cleric spell of 5th Level or lower. You cast it immediately without cost.</span><span lang="es">¡Rediseñado! Elige cualquier conjuro de Clérigo de 5º Nivel o menor. Lo lanzas de inmediato sin coste.</span></div>
+                    </li>
+                    <li class="feature-item">
+                        <div class="feature-title"><span lang="pt">Intervenção Maior (Nv 20)</span><span lang="en">Greater Divine Intervention (Lvl 20)</span><span lang="es">Intervención Divina Mayor (Nv 20)</span></div>
+                        <div><span lang="pt">Sua Intervenção Divina agora permite conjurar a poderosa magia DESEJO (Wish).</span><span lang="en">Your Divine Intervention now allows you to cast the powerful WISH spell.</span><span lang="es">Tu Intervención Divina ahora permite conjurar el poderoso conjuro DESEO (Wish).</span></div>
+                    </li>
+                    </ul>
+                </section>
+            </div>
+        </div>
+    </div>
+    <script>
+        function setLanguage(lang, element) {
+            document.body.className = 'lang-' + lang;
+            const buttons = document.querySelectorAll('.lang-btn');
+            buttons.forEach(btn => btn.classList.remove('active'));
+            element.classList.add('active');
+        }
+    </script>
+</body>
+</html>
