@@ -91,10 +91,46 @@
     <script>
         function setLanguage(lang, element) {
             document.body.className = 'lang-' + lang;
+            
+            try {
+                localStorage.setItem('dnd_preferred_language', lang);
+            } catch (e) {}
+
+            document.querySelectorAll('a').forEach(a => {
+                try {
+                    const url = new URL(a.href);
+                    if (url.origin === window.location.origin || url.protocol === 'file:') {
+                        url.searchParams.set('lang', lang);
+                        a.href = url.href;
+                    }
+                } catch (e) {}
+            });
+
             const buttons = document.querySelectorAll('.lang-btn');
             buttons.forEach(btn => btn.classList.remove('active'));
-            element.classList.add('active');
+            
+            if (element) {
+                element.classList.add('active');
+            } else {
+                const btn = Array.from(buttons).find(b => b.textContent.toLowerCase() === lang.toLowerCase());
+                if (btn) btn.classList.add('active');
+            }
         }
+
+        document.addEventListener('DOMContentLoaded', () => {
+            const urlParams = new URLSearchParams(window.location.search);
+            let savedLanguage = urlParams.get('lang');
+            
+            if (!savedLanguage) {
+                try {
+                    savedLanguage = localStorage.getItem('dnd_preferred_language');
+                } catch (e) {}
+            }
+
+            if (savedLanguage) {
+                setLanguage(savedLanguage);
+            }
+        });
     </script>
 </body>
 </html>
