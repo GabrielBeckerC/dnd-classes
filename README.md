@@ -1,4 +1,4 @@
-dnd-monk
+dnd-classes
 ==============
 
 An interactive HTML quick reference hub for D&amp;D 5e (2024 rules / 5.5e) classes. 
